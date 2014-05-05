@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My First Angular App</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+	<body>
+		<div ng-app ng-controller="myFirstController">
+			<p>Angular testing</p>
+			<input type="text" ng-model="hork"/>
+			<p>{{ hork }}</p>	<!-- this makes hork vairable update as text is entered into the text field -->
+			<input type="button" value="Add" ng-click="addName()"/>
+			<h3>Array of Names</h3>
+			<ol>
+				<li ng-repeat="aName in names track by $index">{{ aName }}<button ng-click="removeName($index)">X</button></li>
+			</ol>
+		</div>
+	</body>
+</html>
