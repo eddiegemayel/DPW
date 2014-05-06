@@ -39,6 +39,10 @@ def car_select(num):
         return car_array[2]
     elif num == 3:
         return car_array[3]
+    elif num > 3:
+        return "Chevy"
+    elif num < 0:
+        return "Pontiac"
 
 def villain_select(num):
     if num == 0:
@@ -49,6 +53,11 @@ def villain_select(num):
         return villain_array[2]
     elif num == 3:
         return villain_array[3]
+    elif num > 3:
+        return "Dr. Evil"
+    elif num < 0:
+        return "Two-Face"
+
 
 
 car = car_select(int(number1))
