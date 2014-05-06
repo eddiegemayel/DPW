@@ -16,7 +16,7 @@ name1 = raw_input("Type a Name! ")
 name2 = raw_input("Type a second Name! ")
 
 
-verb1 = raw_input("Type a Verb! ")
+verb1 = raw_input("Type a past tense Verb! ")
 verb2 = raw_input("Type a second Verb! ")
 
 number1 = raw_input("Type a number between (and/or including) 0 and 3! ")
@@ -62,13 +62,17 @@ def villain_select(num):
 
 car = car_select(int(number1))
 villain = villain_select(int(number2))
+v_num = int(number3) * 2
 
 
 #print names_array
 #print class_verbs
 
 story = '''
-This is the story about {names_array[0]}. He was driving around in his {car}. A villain named {villain}
+This is the story about {names_array[0]}. He was driving around in his {car}, when a villain named {villain} wanted to fight
+him. {villain}'s was {v_num} years old...which was 2X older than {names_array[0]}, who was only {number3}!
+This was a cause to fight...until his good friend {names_array[1]} came to save the day! {names_array[1]} came in and {verb1}
+{villain} right in the face!
 
 '''
 
