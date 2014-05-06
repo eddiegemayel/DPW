@@ -5,6 +5,8 @@ DPW
 Lab1 MadLib
 '''
 names_array = []
+#this array will be accessed by the if statement
+car_array = ["BMW", "Lambo", "Honda", "Ford"]
 
 
 
@@ -16,8 +18,8 @@ name2 = raw_input("Type a second Name! ")
 verb1 = raw_input("Type a Verb! ")
 verb2 = raw_input("Type a second Verb! ")
 
-number1 = raw_input("Type a number to be added together! ")
-number2 = raw_input("Type another number to be added together! ")
+number1 = raw_input("Type a number between (and/or including) 0 and 3! ")
+number2 = raw_input("Type another number between (and/or including) 0 and 3! ")
 number3 = raw_input("Type your age! ")
 
 
@@ -27,15 +29,30 @@ class_verbs = {"verb1": verb1, "verb2": verb2}
 names_array.append(name1)
 names_array.append(name2)
 
+def car_select(num):
+    if num == 0:
+        return car_array[0]
+    elif num == 1:
+        return car_array[1]
+    elif num == 2:
+        return car_array[2]
+    elif num == 3:
+        return car_array[3]
 
-print names_array
-print class_verbs
+
+car = car_select(int(number1))
+
+
+#print names_array
+#print class_verbs
 
 story = '''
-This is the story about {names_array[0]}!
+This is the story about {names_array[0]}. He was driving around in his {car}.
 
 '''
 
 story = story.format(**locals())
+
+
 
 print story
