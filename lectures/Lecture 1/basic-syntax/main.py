@@ -112,5 +112,5 @@ print first + " , wow, nice to fucking meet you"
 
 
 #type yo age
-number = raw_input("Type yo fucking age fool")
-print str(int(number)) +"You younginhi"
+number = raw_input("Type yo age fool")
+print str(int(number)) +"You are so young"
