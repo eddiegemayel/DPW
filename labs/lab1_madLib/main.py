@@ -4,11 +4,13 @@ May 5th 2014
 DPW
 Lab1 MadLib
 '''
+#names will be stored here
 names_array = []
 #this array will be accessed by the if statement
 car_array = ["BMW", "Lambo", "Honda", "Ford"]
 villain_array = ["Darth Vader", "Green Goblin", "The Joker", "Lex Luthor"]
 
+#for the random number to be used later on in the story
 import random
 
 
@@ -25,13 +27,14 @@ number1 = raw_input("Type a number between (and/or including) 0 and 3! ")
 number2 = raw_input("Type another number between (and/or including) 0 and 3! ")
 number3 = raw_input("Type your age! ")
 
-
+#store the verbs in a dictionary to be easily accessed later
 class_verbs = {"verb1": verb1, "verb2": verb2}
 
-
+#append the names that were entered into the array
 names_array.append(name1)
 names_array.append(name2)
 
+#whatever number was entered by the user, select a car for their mad lib
 def car_select(num):
     if num == 0:
         return car_array[0]
@@ -44,6 +47,7 @@ def car_select(num):
     elif num > 3 or num < 0:
         return "Chevy"
 
+#whatever number was entered by the user, select a villain the user will battle in their madlib
 def villain_select(num):
     if num == 0:
         return villain_array[0]
@@ -56,23 +60,25 @@ def villain_select(num):
     elif num > 3 or num < 0:
         return "Dr. Evil"
 
+#a function to call later that generates a random number that will be used in the madlib story
 def random_people():
     for i in range(0,1):
         return random.randrange(10000)
 
 
+#store some values into variables to make them easier to access while writing the madlib story
 car = car_select(int(number1))
 villain = villain_select(int(number2))
 v_num = int(number3) * 2
 
 r_number = random_people()
 
-print r_number
-
-
+#prints used for testing purposes, making sure they function properly
+#print r_number
 #print names_array
 #print class_verbs
 
+#the actual madlib
 story = '''
 This is the story about {names_array[0]}. He/She was driving around in his/her {car}, when a villain named {villain} appeared
 out of nowhere! {villain} was {v_num} years old...which was 2X older than {names_array[0]}, who was a young {number3} years of age!
@@ -83,9 +89,10 @@ that the villain had been destroyed!
 
 '''
 
+#format the variables
 story = story.format(**locals())
 
 
-
+#show the madlib
 print story
 
