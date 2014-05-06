@@ -7,6 +7,7 @@ Lab1 MadLib
 names_array = []
 #this array will be accessed by the if statement
 car_array = ["BMW", "Lambo", "Honda", "Ford"]
+villain_array = ["Darth Vader", "Green Goblin", "The Joker", "Lex Luthor"]
 
 
 
@@ -39,15 +40,26 @@ def car_select(num):
     elif num == 3:
         return car_array[3]
 
+def villain_select(num):
+    if num == 0:
+        return villain_array[0]
+    elif num == 1:
+        return villain_array[1]
+    elif num == 2:
+        return villain_array[2]
+    elif num == 3:
+        return villain_array[3]
+
 
 car = car_select(int(number1))
+villain = villain_select(int(number2))
 
 
 #print names_array
 #print class_verbs
 
 story = '''
-This is the story about {names_array[0]}. He was driving around in his {car}.
+This is the story about {names_array[0]}. He was driving around in his {car}. A villain named {villain}
 
 '''
 
