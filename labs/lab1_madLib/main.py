@@ -1,25 +1,32 @@
-#getting info from the user
+'''
+Eddie Gemayel
+May 5th 2014
+DPW
+Lab1 MadLib
+'''
 names_array = []
 
 
 
-
+#collecting inputs from the user
 name1 = raw_input("Type a Name!")
 name2 = raw_input("Type a second Name!")
-name3 = raw_input("Type a third Name!")
+
 
 verb1 = raw_input("Type a Verb!")
 verb2 = raw_input("Type a second Verb!")
-verb3 = raw_input("Type a third Verb!")
+
+number1 = raw_input("Type a number to be added!")
+number2 = raw_input("Type another number to be added!")
+number3 = raw_input("Type your age!")
 
 
+class_verbs = {"verb1": verb1, "verb2": verb2}
 
-class_verbs = {"verb1": verb1, "verb2": verb2, "verb3": verb3}
-#class_verbs={"verb1":verb1}
 
 names_array.append(name1)
 names_array.append(name2)
-names_array.append(name3)
+
 
 print names_array
 print class_verbs
