@@ -95,4 +95,3 @@ story = story.format(**locals())
 
 #show the madlib
 print story
-
