@@ -25,13 +25,13 @@ print new_area
 
 beer = raw_input("Enter your beer number : ")
 
-def count_down(b):
-    for i in range(b, 0, -1):
-        n = b-1
-        string =  "{b} bottles of beer on the wall, {b} bottles of beer...take one down and pass it around. Now you have {n} beers on the wall."
+def count_down():
+    for i in range(int(beer), 0, -1):
+        n = int(i)-1
+        string =  "{i} bottles of beer on the wall, {i} bottles of beer...take one down and pass it around. Now you have {n} beers on the wall."
         string = string.format(**locals())
-        return string
+        print string
 
-the_countdown = count_down(int(beer))
+the_countdown = count_down()
 
 print the_countdown
