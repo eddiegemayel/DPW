@@ -2,9 +2,8 @@ import webapp2
 
 from page import HTMLFormPage
 
-
 class MainHandler(webapp2.RequestHandler):
-   
+
     def get(self):
         #calling constructor function
         p = HTMLFormPage()
