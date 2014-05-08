@@ -25,6 +25,7 @@ print new_area
 
 beer = raw_input("Enter your beer number : ")
 
+#countdown function for the beer
 def count_down():
     for i in range(int(beer), 0, -1):
         n = int(i)-1
