@@ -44,16 +44,7 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../../quizes/quiz1/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="16" selection-start="679" selection-end="679" vertical-scroll-proportion="0.80851066" vertical-offset="85" max-vertical-offset="585">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Lecture 1/basic-syntax/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="1815">
+            <state line="28" column="26" selection-start="645" selection-end="645" vertical-scroll-proportion="0.66739607" vertical-offset="115" max-vertical-offset="630">
               <folding />
             </state>
           </provider>
@@ -469,14 +460,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../Lecture 1/basic-syntax/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1815">
+        <state line="37" column="58" selection-start="482" selection-end="540" vertical-scroll-proportion="0.031914894" vertical-offset="540" max-vertical-offset="1815">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../quizes/quiz1/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="16" selection-start="679" selection-end="679" vertical-scroll-proportion="0.80851066" vertical-offset="85" max-vertical-offset="585">
+        <state line="28" column="26" selection-start="645" selection-end="645" vertical-scroll-proportion="0.66739607" vertical-offset="115" max-vertical-offset="630">
           <folding />
         </state>
       </provider>
