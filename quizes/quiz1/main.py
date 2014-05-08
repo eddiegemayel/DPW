@@ -18,3 +18,12 @@ def calc_area(w, h):
 newArea = calc_area(int(width), int(height))
 
 print newArea
+
+
+beer = raw_input("Enter your beer")
+
+def count_down(b):
+    for i in range(b, 1):
+        return b
+
+print count_down(beer)
