@@ -5,6 +5,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="quiz1" />
+    <orderEntry type="module" module-name="basic-syntax" />
   </component>
 </module>
 
