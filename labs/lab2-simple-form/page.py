@@ -50,8 +50,9 @@ class HTMLFormPage(object):
                 <option value="Keeper">Keeper</option>
             </select>
             </div>
-
+            <div class="btn">
             <button name="submit" class="css3button">Enter</button>
+            </div>
             </div>
         </form>
         '''

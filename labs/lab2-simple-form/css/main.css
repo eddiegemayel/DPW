@@ -1,13 +1,23 @@
-h1, h2, h3{
-	font-family: 'Francois One', sans-serif;
-	color: #FFF6DB;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+body{
+    background-image:url(images/grass2.jpg);
 }
 
 h1{
+	font-family: 'Francois One', sans-serif;
 	margin-left: 180px;
 	color: #8EC1F0;
 	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+h2, h3{
+	font-family: 'Francois One', sans-serif;
+	color: #FFF6DB;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	
+}
+
+strong{
+	color: #DDDCE8;
 }
 
 p{
@@ -20,31 +30,8 @@ label{
 	color: #FFF6DB;
 }
 
-#selection{
-	/*padding-right: 850px;
-	padding-bottom: 50px;
-	padding-top: 30px;*/
-	margin: 0 auto;
-
-}
-
-body{
-    background-image:url(images/grass2.jpg);
-}
-
-.section{
-	text-align: center;
-	vertical-align: middle;
-	margin: 0 auto;	
-
-}
-
-.wrapper{
-	width: 900px;
-	margin: 0 auto;	
-	border: 2px solid black;
-	padding: 5px;
-	background-color: #E87C32;
+input{
+	width: 200px;
 }
 
 select {
@@ -72,9 +59,40 @@ select {
     white-space: nowrap;
 }
 
+#selection{
+	/*padding-right: 850px;
+	padding-bottom: 50px;
+	padding-top: 30px;*/
+	margin: 0 auto;
+
+}
+
+.section{
+	text-align: center;
+	vertical-align: middle;
+	margin: 0 auto;	
+
+}
+
+.wrapper{
+	width: 900px;
+	margin: 0 auto;	
+	border: 2px solid black;
+	padding: 5px;
+	background-color: #E87C32;
+}
+
+.indent{
+	margin-left: 240px;
+}
+
+.btn{
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 20px;
+}
 
 button.css3button {
-	margin: 0 auto;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	color: #ffffff;
