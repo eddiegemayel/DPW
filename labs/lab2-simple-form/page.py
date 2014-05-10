@@ -19,17 +19,21 @@ class HTMLFormPage(object):
             <input type="text" name="lastname" placeholder="Enter Your Last Name"/>
             <label for="phone">Phone Number:</label>
             <input type="text" name="phone" placeholder="Enter Your Contact Phone Number"/>
+
             <br/>
-            <h2>What Days Are You Available?</h2>
+            <h2>What Day Would You Prefer To Play On?</h2>
+
             <label for="friday">Friday:</label>
             <input type="checkbox" name="days" value="friday" checked="checked"/>
             <label for="saturday">Saturday:</label>
             <input type="checkbox" name="days" value="saturday"/>
             <label for="sunday">Sunday:</label>
             <input type="checkbox" name="days" value="sunday"/>
+
             <br/>
             <h2>What Position Do You Play?</h2>
-            <select>
+
+            <select name="position">
                 <option value="striker">Forward/Striker</option>
                 <option value="mid">Midfielder</option>
                 <option value="back">Defender</option>
