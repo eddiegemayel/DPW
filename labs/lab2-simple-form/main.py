@@ -17,7 +17,7 @@ class MainHandler(webapp2.RequestHandler):
             pn = self.request.GET["phone"]
             day = self.request.GET["days"]
             pos = self.request.GET["position"]
-            self.response.write(d.print_out(fn+ " "+ ln + " " + pn + " " +day+" "+pos))
+            self.response.write(d.print_out("<p><strong>First Name:</strong> " + fn + "</p><p><strong>Last Name:</strong> " + ln + "</p><p><strong>Phone Number:</strong> " + pn + "</p><p><strong>Preferred Day To Play:</strong> " +day+"</p><p><strong>Position:</strong> "+pos+"</p>"))
         else:
             self.response.write(p.print_out(" "))
 

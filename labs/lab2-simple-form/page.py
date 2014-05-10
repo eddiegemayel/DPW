@@ -24,20 +24,20 @@ class HTMLFormPage(object):
             <h2>What Day Would You Prefer To Play On?</h2>
 
             <label for="friday">Friday:</label>
-            <input type="checkbox" name="days" value="friday" checked="checked"/>
+            <input type="checkbox" name="days" value="Friday" checked="checked"/>
             <label for="saturday">Saturday:</label>
-            <input type="checkbox" name="days" value="saturday"/>
+            <input type="checkbox" name="days" value="Saturday"/>
             <label for="sunday">Sunday:</label>
-            <input type="checkbox" name="days" value="sunday"/>
+            <input type="checkbox" name="days" value="Sunday"/>
 
             <br/>
             <h2>What Position Do You Play?</h2>
 
             <select name="position">
-                <option value="striker">Forward/Striker</option>
-                <option value="mid">Midfielder</option>
-                <option value="back">Defender</option>
-                <option value="keeper">Keeper</option>
+                <option value="Striker">Forward/Striker</option>
+                <option value="Midfielder">Midfielder</option>
+                <option value="Defender">Defender</option>
+                <option value="Keeper">Keeper</option>
             </select>
             <button name="submit">Enter</button>
         </form>
