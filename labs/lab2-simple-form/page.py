@@ -20,8 +20,10 @@ class HTMLFormPage(object):
             <div class="section">
             <label for="firstname">First Name:</label>
             <input type="text" name="firstname" placeholder="Enter Your First Name"/>
+            <br/>
             <label for="lastname">Last Name:</label>
             <input type="text" name="lastname" placeholder="Enter Your Last Name"/>
+            <br/>
             <label for="phone">Phone Number:</label>
             <input type="text" name="phone" placeholder="Enter Your Contact Phone Number"/>
             </div>
@@ -40,7 +42,7 @@ class HTMLFormPage(object):
 
             <br/>
             <h2>What Position Do You Play?</h2>
-            <div class="section">
+            <div class="section" id="selection">
             <select name="position">
                 <option value="Striker">Forward/Striker</option>
                 <option value="Midfielder">Midfielder</option>
@@ -49,7 +51,7 @@ class HTMLFormPage(object):
             </select>
             </div>
 
-            <button type="button" name="submit" value="" class="css3button">Enter</button>
+            <button name="submit" class="css3button">Enter</button>
             </div>
         </form>
         '''
