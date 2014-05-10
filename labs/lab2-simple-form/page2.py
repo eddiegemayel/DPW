@@ -6,6 +6,9 @@ class HTMLDisplayPage(object):
     <head>
         <title>Confirmation : Big League Futbol</title>
         <link href="css/main.css" rel="stylesheet" type="text/css"/>
+        <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     </head>
     <body>
         '''

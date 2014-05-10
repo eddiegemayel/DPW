@@ -2,6 +2,67 @@ input{
     width: 200px;
 }
 
+h1, h2, h3,{
+	font-family: 'Francois One', sans-serif;
+}
+
+p{
+	font-family: 'Arimo', sans-serif;
+}
+
+label{
+	font-family: 'Raleway', sans-serif;
+}
+
 /*body{
     background-image:url(images/grass1.jpg);
 }*/
+
+.section{
+	text-align: center;
+	vertical-align: middle;
+	margin: 0 auto;	
+}
+
+.wrapper{
+	width: 900px;
+	margin: 0 auto;	
+	border: 2px solid black;
+	padding: 5px;
+}
+
+
+button.css3button {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #ffffff;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#ddeb1d 0%,
+		#f5e20c 25%,
+		#c7930e 75%,
+		#cc861d);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ddeb1d),
+		color-stop(0.25, #f5e20c),
+		color-stop(0.75, #c7930e),
+		to(#cc861d));
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	border: 3px solid #171717;
+	-moz-box-shadow:
+		2px 2px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 10px rgba(087,087,087,0.7);
+	-webkit-box-shadow:
+		2px 2px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 10px rgba(087,087,087,0.7);
+	box-shadow:
+		2px 2px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 10px rgba(087,087,087,0.7);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.4),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
