@@ -1,5 +1,5 @@
 body{
-    background-image:url(images/grass2.jpg);
+    background-image:url(images/grass3.jpg);
 }
 
 h1{
@@ -67,11 +67,9 @@ select {
 
 }
 
-.section{
-	text-align: center;
+#checkboxes{
 	vertical-align: middle;
-	margin: 0 auto;	
-
+	margin: 0 auto;
 }
 
 .wrapper{
@@ -80,6 +78,20 @@ select {
 	border: 2px solid black;
 	padding: 5px;
 	background-color: #E87C32;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	opacity: .98;
+	-webkit-box-shadow: 7px 5px 9px 0px rgba(190, 123, 33, 0.63);
+	-moz-box-shadow: 7px 5px 9px 0px rgba(190, 123, 33, 0.63);
+	box-shadow: 7px 5px 9px 0px rgba(190, 123, 33, 0.63);
+}
+
+.section{
+	text-align: center;
+	vertical-align: middle;
+	margin: 0 auto;	
+
 }
 
 .indent{

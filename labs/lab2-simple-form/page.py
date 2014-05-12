@@ -31,7 +31,7 @@ class HTMLFormPage(object):
 
             <br/>
             <h2>What Day Would You Prefer To Play On?</h2>
-            <div class="section">
+            <div class="section" id="checkboxes">
             <label for="friday">Friday:</label>
             <input type="checkbox" name="days" value="Friday" checked="checked"/>
             <label for="saturday">Saturday:</label>
