@@ -1,5 +1,6 @@
 class HTMLDisplayPage(object):
     def __init__(self):
+        #opening html page
         self.page_open = '''
 <!DOCTYPE html>
 <html>
@@ -12,6 +13,7 @@ class HTMLDisplayPage(object):
     </head>
     <body>
         '''
+         #content part of the HTML page
         self.page_content = '''
         <h1>This Is The Information You Entered</h1>
         <h2 class="indent">Thank You For Your Interest In Your Local Big League Futbol!</h2>
@@ -21,7 +23,7 @@ class HTMLDisplayPage(object):
     </body>
 </html>
 '''
-
+    #printout function being called in the main
     def print_out(self, content):
 
         return self.page_open + self.page_content + content + self.page_close
