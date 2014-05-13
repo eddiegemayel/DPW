@@ -7,7 +7,7 @@ class MainHandler(webapp2.RequestHandler):
 
         yoda = Character()
         yoda.name = "Master Yoda"
-        yoda.age = 900
+        yoda.age = -5
         yoda.occupation = "Jedi Master"
         yoda.gender = "Dude"
         yoda.print_info()
@@ -42,13 +42,14 @@ class Character(object):
 
     @property
     def age(self):
-        return age
+        return self.__age
 
-    age.setter
+    @age.setter
     def age(self, value):
-        if age < 0:
-            print "You can't be less than 0 ya shit"
-        self.__age = value
+        if value < 0:
+            print "You can't be less than 0"
+        else:
+            self.__age = value
 
     #read access
     @property
