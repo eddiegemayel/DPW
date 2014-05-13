@@ -26,16 +26,7 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="33" selection-start="1447" selection-end="1447" vertical-scroll-proportion="0.8727273" vertical-offset="0" max-vertical-offset="2700">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="176" selection-end="176" vertical-scroll-proportion="-0.0" vertical-offset="135" max-vertical-offset="450">
+            <state line="149" column="33" selection-start="4517" selection-end="4517" vertical-scroll-proportion="0.7090909" vertical-offset="1650" max-vertical-offset="2730">
               <folding />
             </state>
           </provider>
@@ -314,14 +305,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="176" selection-end="176" vertical-scroll-proportion="-0.0" vertical-offset="135" max-vertical-offset="450">
+        <state line="30" column="0" selection-start="373" selection-end="373" vertical-scroll-proportion="-17.0" vertical-offset="25" max-vertical-offset="825">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="33" selection-start="1447" selection-end="1447" vertical-scroll-proportion="0.8727273" vertical-offset="0" max-vertical-offset="2700">
+        <state line="149" column="33" selection-start="4517" selection-end="4517" vertical-scroll-proportion="0.7090909" vertical-offset="1650" max-vertical-offset="2730">
           <folding />
         </state>
       </provider>

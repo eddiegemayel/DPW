@@ -96,7 +96,7 @@ class MainHandler(webapp2.RequestHandler):
                     <p class="stats">{goals}</p>
                     <p class="stats">{goals_per}</p>
                 </section>
-                <img src="css/images/{player}.jpg"/>
+                <img class="pic" src="css/images/{player}.jpg"/>
                 </div>'''
 
 
@@ -147,6 +147,7 @@ class Page(object):
         self.nav = """
         <h1>Greatest Footballers In The World</h1>
         <h2>Click on a great footballer to learn more about their stats</h2>
+        <div class="linkContainer">
         <ul>
             <li><a href="?player=0">Ronaldo</a></li>
             <li><a href="?player=1">Zlatan</a></li>
@@ -154,6 +155,7 @@ class Page(object):
             <li><a href="?player=3">Yaya Toure</a></li>
             <li><a href="?player=4">Marco Rues</a></li>
         </ul>
+        </div>
         """
         self.close = """
     </body>
