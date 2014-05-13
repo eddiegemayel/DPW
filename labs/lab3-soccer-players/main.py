@@ -3,12 +3,14 @@
 #Lab 3
 import webapp2
 
+
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         home_page = Page()
         home_page.title = "Home Page"
-
+        home_page.update()
         ronaldo = Player()
+
         ronaldo.name = "Christiano Ronaldo"
         ronaldo.position = "Forward"
         ronaldo.team = "Real Madrid"
@@ -55,7 +57,7 @@ class MainHandler(webapp2.RequestHandler):
         print rues.goals_per_game
 
 
-        #self.response.write(home_page.print_out())
+        self.response.write(home_page.print_out())
 
 
 #############################################player class
@@ -103,14 +105,19 @@ class Page(object):
         <title>{self.title}</title>
     </head>
     <body>"""
-        self.__content = ""
+        self.__content = "Content "
         self.__close = """
     </body>
 </html> """
+
         self.__all = self.__open + self.__content + self.__close
 
 
+    def print_out(self):
+        return self.__all
 
+    def update(self):
+        self.__all = self.__all.format(**locals())
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
