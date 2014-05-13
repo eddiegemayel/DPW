@@ -1,0 +1,13 @@
+#labelArea{
+	/*float: left;
+	vertical-align: middle;
+	margin: 0 auto;*/
+	/*text-align: right;*/
+}
+
+#statArea{
+	float: right;
+	/*vertical-align: middle;
+	margin: 0 auto;*/
+	text-align: left;
+}
