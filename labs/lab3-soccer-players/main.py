@@ -61,14 +61,7 @@ class MainHandler(webapp2.RequestHandler):
         home_page.title = "Home Page"
         home_page.update()
 
-        ronaldo_page = Page()
-        ronaldo_page.title = "Ronaldo"
-        ronaldo_page.update()
-
-        # if Player == ronaldo:
-        #     self.response.write(ronaldo_page.print_out())
-        # else:
-        #     self.response.write(home_page.print_out())
+        
 
 
 #############################################---------------player class
