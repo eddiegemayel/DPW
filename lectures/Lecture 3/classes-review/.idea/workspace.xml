@@ -26,16 +26,16 @@
       <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="24" selection-start="866" selection-end="866" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="1125">
+            <state line="32" column="22" selection-start="789" selection-end="789" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1125">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../labs/lab2-simple-form/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="33" selection-start="117" selection-end="117" vertical-scroll-proportion="0.073891625" vertical-offset="0" max-vertical-offset="812">
+            <state line="4" column="33" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
               <folding />
             </state>
           </provider>
@@ -44,16 +44,16 @@
       <file leaf-file-name="page.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../labs/lab2-simple-form/page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="31" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
+            <state line="14" column="11" selection-start="595" selection-end="595" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../getters-setters/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="50" selection-start="918" selection-end="1038" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="900">
+            <state line="7" column="26" selection-start="141" selection-end="141" vertical-scroll-proportion="0.036363635" vertical-offset="75" max-vertical-offset="900">
               <folding />
             </state>
           </provider>
@@ -334,30 +334,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../labs/lab2-simple-form/page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="31" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../getters-setters/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="50" selection-start="918" selection-end="1038" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="900">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="24" selection-start="866" selection-end="866" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
+        <state line="32" column="22" selection-start="789" selection-end="789" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../labs/lab2-simple-form/page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="11" selection-start="595" selection-end="595" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../labs/lab2-simple-form/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="33" selection-start="117" selection-end="117" vertical-scroll-proportion="0.073891625" vertical-offset="0" max-vertical-offset="812">
+        <state line="4" column="33" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../getters-setters/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="26" selection-start="141" selection-end="141" vertical-scroll-proportion="0.036363635" vertical-offset="75" max-vertical-offset="900">
           <folding />
         </state>
       </provider>

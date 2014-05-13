@@ -7,93 +7,96 @@ import webapp2
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         home_page = Page()
+
+        self.ronaldo = Player()
+        self.ronaldo.name = "Christiano Ronaldo"
+        self.ronaldo.position = "Forward"
+        self.ronaldo.team = "Real Madrid"
+        self.ronaldo.games = 165.0
+        self.ronaldo.goals = 177.0
+        self.ronaldo.calc_goals_per_game()
+        print self.ronaldo.goals_per_game
+
+        self.zlatan = Player()
+        self.zlatan.name = "Zlatan Ibrahimovic"
+        self.zlatan.position = "Forward"
+        self.zlatan.team = "PSG"
+        self.zlatan.games = 66.0
+        self.zlatan.goals = 55.0
+        self.zlatan.calc_goals_per_game()
+        print self.zlatan.goals_per_game
+
+
+        self.pogba = Player()
+        self.pogba.name = "Paul Pogba"
+        self.pogba.position = "Midfielder"
+        self.pogba.team = "Juventus"
+        self.pogba.games = 56.0
+        self.pogba.goals = 11.0
+        self.pogba.calc_goals_per_game()
+        print self.pogba.goals_per_game
+
+        self.yaya = Player()
+        self.yaya.name = "Yaya Toure"
+        self.yaya.position = "Midfielder"
+        self.yaya.team = "Manchester City"
+        self.yaya.games = 131.0
+        self.yaya.goals = 38.0
+        self.yaya.calc_goals_per_game()
+        print self.yaya.goals_per_game
+
+        self.rues = Player()
+        self.rues.name = "Marco Rues"
+        self.rues.position = "Winger"
+        self.rues.team = "Dortmund"
+        self.rues.games = 61.0
+        self.rues.goals = 30.0
+        self.rues.calc_goals_per_game()
+        print self.rues.goals_per_game
+
+        players = [self.ronaldo, self.zlatan, self.pogba, self.yaya, self.rues]
+        print players
+
+
         home_page.title = "Home Page"
         home_page.update()
-        ronaldo = Player()
 
-        ronaldo.name = "Christiano Ronaldo"
-        ronaldo.position = "Forward"
-        ronaldo.team = "Real Madrid"
-        ro_ga = ronaldo.games = 165.0
-        ro_go = ronaldo.goals = 177.0
-        ronaldo.goals_per_game = ro_go / ro_ga
-        print ronaldo.goals_per_game
+        ronaldo_page = Page()
+        ronaldo_page.title = "Ronaldo"
+        ronaldo_page.update()
 
-        zlatan = Player()
-        zlatan.name = "Zlatan Ibrahimovic"
-        zlatan.position = "Forward"
-        zlatan.team = "PSG"
-        z_ga = zlatan.games = 66.0
-        z_go = zlatan.goals = 55.0
-        zlatan.goals_per_game = z_go / z_ga
-        print zlatan.goals_per_game
+        # if Player == ronaldo:
+        #     self.response.write(ronaldo_page.print_out())
+        # else:
+        #     self.response.write(home_page.print_out())
 
 
-        pogba = Player()
-        pogba.name = "Paul Pogba"
-        pogba.position = "Midfielder"
-        pogba.team = "Juventus"
-        p_ga = pogba.games = 56.0
-        p_go = pogba.goals = 11.0
-        pogba.goals_per_game = p_go / p_ga
-        print pogba.goals_per_game
-
-        yaya = Player()
-        yaya.name = "Yaya Toure"
-        yaya.position = "Midfielder"
-        yaya.team = "Manchester City"
-        y_ga = yaya.games = 131.0
-        y_go = yaya.goals = 38.0
-        yaya.goals_per_game = y_go / y_ga
-        print yaya.goals_per_game
-
-        rues = Player()
-        rues.name = "Marco Rues"
-        rues.position = "Winger"
-        rues.team = "Dortmund"
-        re_ga = rues.games = 61.0
-        re_go = rues.goals = 30.0
-        rues.goals_per_game = re_go / re_ga
-        print rues.goals_per_game
-
-
-        self.response.write(home_page.print_out())
-
-
-#############################################player class
+#############################################---------------player class
 class Player(object):
     def __init__(self):
         self.name = ""
         self.position = ""
         self.team = ""
-        self.__games = 0
-        self.goals = 0
-        #self.goals_per_game = 0
+        self.games = 0.0
+        self.goals = 0.0
+        self.__goals_per_game = 0.0
 
 
-    def print_info(self):
-        pass
 
-    # @property
-    # def games(self):
-    #     return self.__games
-    #
-    # @games.setter
-    # def games(self, value):
-    #     pass
-    #
-    #
-    #
-    # @property
-    # def goals_per_game(self):
-    #     return self.__goals_per_game
-    #
-    # @goals_per_game.setter
-    # def goals_per_game(self, goals, games):
-    #     new_value = goals / games
-    #     return new_value
+    @property
+    def goals_per_game(self):
+        return self.__goals_per_game
 
-#############################################page class
+    @goals_per_game.setter
+    def goals_per_game(self, value):
+        self.__goals_per_game = value
+
+    def calc_goals_per_game(self):
+        total = self.goals / self.games
+        self.__goals_per_game = total
+
+
+#############################################---------------page class
 
 class Page(object):
     def __init__(self):
@@ -105,7 +108,17 @@ class Page(object):
         <title>{self.title}</title>
     </head>
     <body>"""
-        self.__content = "Content "
+        self.__content = """
+        <h1>Greatest Footballers In The World</h1>
+        <h2>Click on a great footballer to learn more about their stats</h2>
+        <ul>
+            <li><a href="?Player=ronaldo">Ronaldo</a></li>
+            <li><a href="?player=zlatan">Zlatan Ibrahimovic</a></li>
+            <li><a href="?player=pogba">Paul Pogba</a></li>
+            <li><a href="?player=yaya">Yaya Toure</a></li>
+            <li><a href="?player=rues">Marco Rues</a></li>
+        </ul>
+        """
         self.__close = """
     </body>
 </html> """
@@ -118,6 +131,8 @@ class Page(object):
 
     def update(self):
         self.__all = self.__all.format(**locals())
+
+
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
