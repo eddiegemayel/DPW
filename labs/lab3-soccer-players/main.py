@@ -45,16 +45,16 @@ class MainHandler(webapp2.RequestHandler):
         self.yaya.calc_goals_per_game()
         print self.yaya.goals_per_game
 
-        self.rues = Player()
-        self.rues.name = "Marco Rues"
-        self.rues.position = "Winger"
-        self.rues.team = "Dortmund"
-        self.rues.games_played = 61.0
-        self.rues.goals = 30.0
-        self.rues.calc_goals_per_game()
-        print self.rues.goals_per_game
+        self.reus = Player()
+        self.reus.name = "Marco Reus"
+        self.reus.position = "Winger"
+        self.reus.team = "Dortmund"
+        self.reus.games_played = 61.0
+        self.reus.goals = 30.0
+        self.reus.calc_goals_per_game()
+        print self.reus.goals_per_game
 
-        players = [self.ronaldo, self.zlatan, self.pogba, self.yaya, self.rues]
+        players = [self.ronaldo, self.zlatan, self.pogba, self.yaya, self.reus]
 
 
         home_page.title = "Home Page"

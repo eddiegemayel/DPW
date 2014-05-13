@@ -2,12 +2,24 @@
 	/*float: left;
 	vertical-align: middle;
 	margin: 0 auto;*/
-	/*text-align: right;*/
+	position: absolute;
+	left: 480px;
+	text-align: right;
+	/*width: 300px;*/
+	/*border: 1px solid black;*/
 }
 
 #statArea{
-	float: right;
+	/*float: right;*/
 	/*vertical-align: middle;
 	margin: 0 auto;*/
+	position: absolute;
+	left: 720px;
 	text-align: left;
+	/*border: 1px solid black;*/
+	/*width: 1000px;*/
+}
+
+img{
+	border-radius: 10px solid black
 }
