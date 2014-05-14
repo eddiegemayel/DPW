@@ -16,6 +16,10 @@ ul{
 	list-style-type: none;
 }
 
+h3{
+	text-decoration: underline;
+}
+
 a, h3{
 	font-family: 'Alegreya Sans SC', sans-serif;
 	color: #DDD9E0;
@@ -41,23 +45,20 @@ a:visited {
 #contentArea{
 	background-color: #7A7A7A;
 	height: 572px;
-	/*width: 100%;*/
 	margin-left: 110px;
 	margin-right: 110px;
 	border-radius: 10px ;
 	border: 3px solid #DDD9E0;
+	-webkit-box-shadow: 6px 6px 5px 0px rgba(50, 50, 50, 0.67);
+	-moz-box-shadow: 6px 6px 5px 0px rgba(50, 50, 50, 0.67);
+	box-shadow: 6px 6px 5px 0px rgba(50, 50, 50, 0.67);
 }
 
 #labelArea{
-	/*float: left;
-	vertical-align: middle;
-	margin: 0 auto;*/
 	position: absolute;
 	left: 775px;
 	bottom: 200px;
 	text-align: right;
-	/*width: 250px;*/
-	/*border: 1px solid black;*/
 }
 
 #labelArea p{
@@ -65,15 +66,10 @@ a:visited {
 }
 
 #statArea{
-	/*float: right;*/
-	/*vertical-align: middle;
-	margin: 0 auto;*/
 	position: absolute;
 	left: 1035px;
 	bottom: 200px;
 	text-align: left;
-	/*border: 1px solid black;*/
-	/*width: 1000px;*/
 }
 
 #statArea p{

@@ -6,8 +6,10 @@ import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
+        #home page being created from page object
         home_page = Page()
 
+        #creating each player from the Player class object
         self.ronaldo = Player()
         self.ronaldo.name = "Christiano Ronaldo"
         self.ronaldo.position = "Forward"
@@ -54,21 +56,23 @@ class MainHandler(webapp2.RequestHandler):
         self.reus.calc_goals_per_game()
         print self.reus.goals_per_game
 
+        #making an array for each player that clicking a link will reference too
         players = [self.ronaldo, self.zlatan, self.pogba, self.yaya, self.reus]
 
-
+        #Setting home page title
         home_page.title = "Home Page"
         home_page.update()
 
-
-
-
+        #write out the page opening and navigation. they should always stay there
         self.response.write(home_page.open + home_page.nav)
 
+        #if info is recieved
         if self.request.GET:
+            #get which player was selected
             player = int(self.request.GET['player'])
             print player
 
+            #gather info on the selected player
             name = players[player].name
             position = players[player].position
             team = players[player].team
@@ -76,9 +80,14 @@ class MainHandler(webapp2.RequestHandler):
             goals = players[player].goals
             goals_per = players[player].goals_per_game
 
+
+            #self.title(name)
+
+
             home_page.title = name
             home_page.update()
 
+            #content area that will dynamically change depending on selected player
             content='''<div id="contentArea">
             <h3>{name}</h3>
                 <section id="labelArea">
@@ -100,8 +109,10 @@ class MainHandler(webapp2.RequestHandler):
                 </div>'''
 
 
+            #format local variables
             content = content.format(**locals())
 
+            #write out the content and page close
             self.response.write(content)
         self.response.write(home_page.close)
 
@@ -117,7 +128,7 @@ class Player(object):
         self.__goals_per_game = 0.0
 
 
-
+    #getter and setter for determining average goals per game
     @property
     def goals_per_game(self):
         return self.__goals_per_game
@@ -135,7 +146,7 @@ class Player(object):
 
 class Page(object):
     def __init__(self):
-        self.title = ""
+        self.__title = "Footballers"
         self.open = """
 <!DOCTYPE html>
 <html>
@@ -149,7 +160,7 @@ class Page(object):
     <body>"""
         self.nav = """
         <h1>Greatest Footballers In The World</h1>
-        <h2>Click on a legend to learn more about them</h2>
+        <h2>Click on a legend to learn more</h2>
         <div class="linkContainer">
         <ul>
             <li><a href="?player=0">Ronaldo</a></li>
@@ -166,6 +177,16 @@ class Page(object):
 
         self.all = self.open + self.nav + self.close
 
+    #Getter
+    @property
+    def title(self):
+        return self.__title
+
+    #Setter
+    @title.setter
+    def title(self, new_title):
+        self.__title = new_title
+        self.update()
 
     def print_out(self):
         return self.all
