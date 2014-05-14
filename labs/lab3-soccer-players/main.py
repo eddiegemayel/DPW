@@ -59,8 +59,9 @@ class MainHandler(webapp2.RequestHandler):
         #making an array for each player that clicking a link will reference too
         players = [self.ronaldo, self.zlatan, self.pogba, self.yaya, self.reus]
 
-        #Setting home page title
-        home_page.title = "Home Page"
+        #Setting home page title?
+        home_page.title = "Legends"
+        print home_page.title
         home_page.update()
 
         #write out the page opening and navigation. they should always stay there
@@ -146,12 +147,13 @@ class Player(object):
 
 class Page(object):
     def __init__(self):
-        self.__title = "Footballers"
+        self.__title = ""
         self.open = """
 <!DOCTYPE html>
 <html>
     <head>
-        <title>{self.title}</title>
+        <!--<title>{self.title}</title>-->
+        <title>Legends</title>
         <link rel="stylesheet" href="css/main.css" type="text/css" />
         <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC' rel='stylesheet' type='text/css'>
@@ -184,8 +186,8 @@ class Page(object):
 
     #Setter
     @title.setter
-    def title(self, new_title):
-        self.__title = new_title
+    def title(self, new):
+        self.__title = new
         self.update()
 
     def print_out(self):
