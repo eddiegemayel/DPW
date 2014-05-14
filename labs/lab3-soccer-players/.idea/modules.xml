@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../lectures/Lecture 4/inheritance-abstraction/.idea/inheritance-abstraction.iml" filepath="$PROJECT_DIR$/../../lectures/Lecture 4/inheritance-abstraction/.idea/inheritance-abstraction.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/lab3-soccer-players.iml" filepath="$PROJECT_DIR$/.idea/lab3-soccer-players.iml" />
     </modules>
   </component>
