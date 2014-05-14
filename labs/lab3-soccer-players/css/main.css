@@ -1,6 +1,12 @@
+body{
+	background-image: url(images/dark.png);
+}
+
 h1, h2{
 	text-align: center;
 	vertical-align: middle;
+	font-family: 'Montserrat', sans-serif;
+	color: #DDD9E0;
 }
 
 ul{
@@ -8,6 +14,13 @@ ul{
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
+}
+
+a, h3{
+	font-family: 'Alegreya Sans SC', sans-serif;
+	color: #DDD9E0;
+	text-align: center;
+	vertical-align: middle;
 }
 
 a:link {
@@ -18,15 +31,29 @@ a:visited {
 	color: #121D21;
 }
 
+#contentArea{
+	background-color: #7A7A7A;
+	height: 472px;
+	/*width: 100%;*/
+	margin: 0 auto;
+	border-radius: 10px ;
+	border: 3px solid #DDD9E0;
+}
+
 #labelArea{
 	/*float: left;
 	vertical-align: middle;
 	margin: 0 auto;*/
 	position: absolute;
 	left: 480px;
+	bottom: 320px;
 	text-align: right;
 	/*width: 300px;*/
 	/*border: 1px solid black;*/
+}
+
+#labelArea p{
+	font-family: 'PT Sans', sans-serif;
 }
 
 #statArea{
@@ -34,10 +61,15 @@ a:visited {
 	/*vertical-align: middle;
 	margin: 0 auto;*/
 	position: absolute;
-	left: 720px;
+	left: 740px;
+	bottom: 320px;
 	text-align: left;
 	/*border: 1px solid black;*/
 	/*width: 1000px;*/
+}
+
+#statArea p{
+	font-family: 'PT Sans Narrow', sans-serif;
 }
 
 .linkContainer ul li{
@@ -47,4 +79,6 @@ a:visited {
 .pic{
 	border-radius: 10px ;
 	border: 3px solid #BADA55;
+	position: absolute;
+	left: 100px;
 }

@@ -142,11 +142,14 @@ class Page(object):
     <head>
         <title>{self.title}</title>
         <link rel="stylesheet" href="css/main.css" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow' rel='stylesheet' type='text/css'>
     </head>
     <body>"""
         self.nav = """
         <h1>Greatest Footballers In The World</h1>
-        <h2>Click on a great footballer to learn more about their stats</h2>
+        <h2>Click on a legend to learn more about them</h2>
         <div class="linkContainer">
         <ul>
             <li><a href="?player=0">Ronaldo</a></li>
