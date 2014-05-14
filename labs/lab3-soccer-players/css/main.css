@@ -23,6 +23,10 @@ a, h3{
 	vertical-align: middle;
 }
 
+p{
+	padding-bottom: 20px;
+}
+
 a:link {
 	color: #121D21;
 	text-decoration: none;
@@ -38,7 +42,8 @@ a:visited {
 	background-color: #7A7A7A;
 	height: 472px;
 	/*width: 100%;*/
-	margin: 0 auto;
+	margin-left: 110px;
+	margin-right: 110px;
 	border-radius: 10px ;
 	border: 3px solid #DDD9E0;
 }
@@ -48,10 +53,10 @@ a:visited {
 	vertical-align: middle;
 	margin: 0 auto;*/
 	position: absolute;
-	left: 475px;
-	bottom: 320px;
+	left: 775px;
+	bottom: 250px;
 	text-align: right;
-	/*width: 300px;*/
+	/*width: 250px;*/
 	/*border: 1px solid black;*/
 }
 
@@ -64,8 +69,8 @@ a:visited {
 	/*vertical-align: middle;
 	margin: 0 auto;*/
 	position: absolute;
-	left: 735px;
-	bottom: 320px;
+	left: 1035px;
+	bottom: 250px;
 	text-align: left;
 	/*border: 1px solid black;*/
 	/*width: 1000px;*/
@@ -73,6 +78,7 @@ a:visited {
 
 #statArea p{
 	font-family: 'PT Sans Narrow', sans-serif;
+	color: #BADA55;
 }
 
 .linkContainer ul li{
@@ -83,5 +89,5 @@ a:visited {
 	border-radius: 10px ;
 	border: 3px solid #BADA55;
 	position: absolute;
-	left: 100px;
+	left: 300px;
 }
