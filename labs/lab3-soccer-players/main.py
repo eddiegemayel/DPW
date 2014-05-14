@@ -154,9 +154,9 @@ class Page(object):
         <ul>
             <li><a href="?player=0">Ronaldo</a></li>
             <li><a href="?player=1">Zlatan</a></li>
-            <li><a href="?player=2">Paul Pogba</a></li>
-            <li><a href="?player=3">Yaya Toure</a></li>
-            <li><a href="?player=4">Marco Rues</a></li>
+            <li><a href="?player=2">Pogba</a></li>
+            <li><a href="?player=3">Toure</a></li>
+            <li><a href="?player=4">Reus</a></li>
         </ul>
         </div>
         """
