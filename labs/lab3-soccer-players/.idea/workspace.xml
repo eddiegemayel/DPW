@@ -26,7 +26,18 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../lectures/Lecture 4/inheritance-abstraction/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="23" selection-start="494" selection-end="494" vertical-scroll-proportion="0.5272727" vertical-offset="0" max-vertical-offset="825">
+            <state line="76" column="103" selection-start="1917" selection-end="1917" vertical-scroll-proportion="0.6363636" vertical-offset="0" max-vertical-offset="825">
+              <folding>
+                <element signature="e#305#1201#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../lectures/Lecture 4/inheritance-abstraction/css/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="26" selection-start="82" selection-end="82" vertical-scroll-proportion="-1.8" vertical-offset="0" max-vertical-offset="150">
               <folding />
             </state>
           </provider>
@@ -45,6 +56,8 @@
         <option value="$PROJECT_DIR$/page.py" />
         <option value="$PROJECT_DIR$/app.yaml" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/../../lectures/Lecture 4/inheritance-abstraction/app.yaml" />
+        <option value="$PROJECT_DIR$/../../lectures/Lecture 4/inheritance-abstraction/css/styles.css" />
         <option value="$PROJECT_DIR$/../../lectures/Lecture 4/inheritance-abstraction/main.py" />
       </list>
     </option>
@@ -94,6 +107,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="inheritance-abstraction" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lab3-soccer-players" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inheritance-abstraction" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -307,13 +334,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="9" selection-start="103" selection-end="103" vertical-scroll-proportion="0.1125" vertical-offset="0" max-vertical-offset="800">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="0" selection-start="373" selection-end="373" vertical-scroll-proportion="-17.0" vertical-offset="25" max-vertical-offset="825">
@@ -328,10 +348,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="104" selection-end="133" vertical-scroll-proportion="0.13125" vertical-offset="0" max-vertical-offset="800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../lectures/Lecture 4/inheritance-abstraction/app.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="17" selection-start="137" selection-end="137" vertical-scroll-proportion="-4.8" vertical-offset="0" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../lectures/Lecture 4/inheritance-abstraction/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="26" selection-start="82" selection-end="82" vertical-scroll-proportion="-1.8" vertical-offset="0" max-vertical-offset="150">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../../lectures/Lecture 4/inheritance-abstraction/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="23" selection-start="494" selection-end="494" vertical-scroll-proportion="0.5272727" vertical-offset="0" max-vertical-offset="825">
-          <folding />
+        <state line="76" column="103" selection-start="1917" selection-end="1917" vertical-scroll-proportion="0.6363636" vertical-offset="0" max-vertical-offset="825">
+          <folding>
+            <element signature="e#305#1201#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
