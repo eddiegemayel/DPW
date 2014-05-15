@@ -18,7 +18,7 @@ class MainHandler(webapp2.RequestHandler):
 
         print animals[0]
 
-        self.response.write(p._open + p._links + p._close)
+        self.response.write(p._open + p._links)
 
         if self.request.GET:
             animal = int(self.request.GET['animal'])
@@ -34,7 +34,48 @@ class MainHandler(webapp2.RequestHandler):
             location = animals[animal].location
             sound = animals[animal].sound
 
+            content='''
+            <div class="animalContent">
+            <h2>{name}</h2>
+
+                <div id="labels">
+                    <p class="label"><strong>Animal Name:</strong></p>
+                    <p class="label"><strong>Phylum:</strong></p>
+                    <p class="label"><strong>Class:</strong></p>
+                    <p class="label"><strong>Order:</strong></p>
+                    <p class="label"><strong>Family:</strong></p>
+                    <p class="label"><strong>Genus:</strong></p>
+                    <p class="label"><strong>Average Lifespan:</strong></p>
+                    <p class="label"><strong>Habitat:</strong></p>
+                    <p class="label"><strong>Geo-Location:</strong></p>
+                    <p class="label"><strong>Sound It Makes:</strong></p>
+                </div>
+
+                <div id="info">
+                    <p class="stats">{name}</p>
+                    <p class="stats">{phylum}</p>
+                    <p class="stats">{classs}</p>
+                    <p class="stats">{order}</p>
+                    <p class="stats">{family}</p>
+                    <p class="stats">{genus}</p>
+                    <p class="stats">{lifespan}</p>
+                    <p class="stats">{habitat}</p>
+                    <p class="stats">{location}</p>
+                    <p class="stats">{sound}</p>
+                </div>
+
+
+
+                </div>'''
+
+
+            #format local variables
+            content = content.format(**locals())
+
+            #write out the content and page close
             self.response.write(content)
+
+        self.response.write(p._close)
 
 
 

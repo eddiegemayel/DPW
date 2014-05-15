@@ -35,7 +35,7 @@
       <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="0" selection-start="2396" selection-end="2396" vertical-scroll-proportion="0.0" vertical-offset="690" max-vertical-offset="3120">
+            <state line="116" column="40" selection-start="2923" selection-end="4013" vertical-scroll-proportion="0.0" vertical-offset="1140" max-vertical-offset="3120">
               <folding />
             </state>
           </provider>
@@ -44,9 +44,9 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../lab4-fox/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="41" selection-start="949" selection-end="949" vertical-scroll-proportion="0.48848486" vertical-offset="107" max-vertical-offset="2010">
+            <state line="63" column="43" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.70666665" vertical-offset="362" max-vertical-offset="2625">
               <folding>
-                <element signature="e#1019#2023#0" expanded="false" />
+                <element signature="e#2607#3611#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -353,16 +353,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="0" selection-start="2396" selection-end="2396" vertical-scroll-proportion="0.0" vertical-offset="690" max-vertical-offset="3120">
+        <state line="116" column="40" selection-start="2923" selection-end="4013" vertical-scroll-proportion="0.0" vertical-offset="1140" max-vertical-offset="3120">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../lab4-fox/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="41" selection-start="949" selection-end="949" vertical-scroll-proportion="0.48848486" vertical-offset="107" max-vertical-offset="2010">
+        <state line="63" column="43" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.70666665" vertical-offset="362" max-vertical-offset="2625">
           <folding>
-            <element signature="e#1019#2023#0" expanded="false" />
+            <element signature="e#2607#3611#0" expanded="false" />
           </folding>
         </state>
       </provider>
