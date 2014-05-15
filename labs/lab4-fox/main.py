@@ -2,8 +2,10 @@ import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        #self.response.write('Hello world!')
-        pass
+        p = Page()
+
+
+       
 
 
 class Page(object):
@@ -17,7 +19,7 @@ class Page(object):
     </head>
     <body>
         """
-        self._content = "This is my DEFAULT content"
+        self._content = "This is my home DEFAULT content"
         self._close = """
     </body>
 </html>"""
@@ -59,10 +61,66 @@ class Animal(object):
         self.lifespan = ""
         self.habitat = ""
         self.location = ""
-        self.sound = ""
+        self._sound = "Default"
 
+    @property
     def sound(self):
-        return self.sound
+        return self._sound
+
+class Eagle(Animal):
+    def __init__(self):
+        Animal.__init__(self)
+
+        self.phylum = "Chordata"
+        self.classs = "Aves"
+        self.order = "Accipitriformes"
+        self.family = "Accipitridae"
+        self.genus = "Haliaeetus"
+        self.lifespan = "Around 20 years"
+        self.habitat = "Wetlands"
+        self.location = "North America"
+        self._sound = "Caaawww!"
+
+    @property
+    def sound(self):
+        return self._sound
+
+class Pig(Animal):
+    def __init__(self):
+        Animal.__init__(self)
+
+        self.phylum = "Chordata"
+        self.classs = "Mammalia"
+        self.order = "Artiodactyla"
+        self.family = "Suidae"
+        self.genus = "Sus"
+        self.lifespan = "Around 8 years"
+        self.habitat = "Anywhere with enough water"
+        self.location = "Americas, Eurasia, Africa"
+        self._sound = "Oink Oink!"
+
+    @property
+    def sound(self):
+        return self._sound
+
+class Horse(Animal):
+    def __init__(self):
+        Animal.__init__(self)
+
+        self.phylum = "Chordata"
+        self.classs = "Mammalia"
+        self.order = "Perissodactyla"
+        self.family = "Equidae"
+        self.genus = "Equus"
+        self.lifespan = "Between 25-30 years"
+        self.habitat = "Open Grass Plains"
+        self.location = "Americas, Europe"
+        self._sound = "Neigh!"
+
+    @property
+    def sound(self):
+        return self._sound
+
 
 
 app = webapp2.WSGIApplication([
