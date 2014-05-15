@@ -4,7 +4,6 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
 
         p = Page()
-        p.title = "Animal Home Page"
 
         eagle = Eagle()
         pig = Pig()
@@ -33,6 +32,8 @@ class MainHandler(webapp2.RequestHandler):
             habitat = animals[animal].habitat
             location = animals[animal].location
             sound = animals[animal].sound
+
+            #p.title = name
 
             content='''
             <div class="animalContent">
@@ -64,7 +65,9 @@ class MainHandler(webapp2.RequestHandler):
                     <p class="stats">{sound}</p>
                 </div>
 
-
+                <div class="pic">
+                    <img src="css/images/{name}.jpg"/>
+                </div>
 
                 </div>'''
 
@@ -85,12 +88,12 @@ class Page(object):
 <!DOCTYPE html>
 <html>
     <head>
-        <title>{self.title}</title><!--calling the function-->
-        <link rel ="stylesheet" type="text/css" href="{self.css_url}"/>
+        <title>Much Animals</title><!--calling the function-->
+        <link rel ="stylesheet" type="text/css" href="css/main.css"/>
     </head>
     <body>
         """
-        self._links = """"
+        self._links = """
             <a href="?animal=0">Eagle</a>
             <a href="?animal=1">Pig</a>
             <a href="?animal=2">Horse</a>
@@ -98,7 +101,6 @@ class Page(object):
         self._close = """
     </body>
 </html>"""
-        self._css_url = ""
         self._title = ""
         self.all = ""
 
@@ -110,13 +112,6 @@ class Page(object):
     def title(self, t):
         self._title = t
 
-    @property
-    def css_url(self):
-        return self._css_url
-
-    @css_url.setter
-    def css_url(self, c):
-        self._css_url = c
 
     def print_out(self):
         self.update()
