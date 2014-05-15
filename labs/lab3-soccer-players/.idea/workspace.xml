@@ -23,13 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../lectures/Lecture 4/inheritance-abstraction/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="103" selection-start="1917" selection-end="1917" vertical-scroll-proportion="0.6363636" vertical-offset="0" max-vertical-offset="825">
-              <folding>
-                <element signature="e#305#1201#0" expanded="false" />
-              </folding>
+            <state line="63" column="30" selection-start="1385" selection-end="1385" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1305">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -39,6 +37,17 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="3" column="26" selection-start="82" selection-end="82" vertical-scroll-proportion="-1.8" vertical-offset="0" max-vertical-offset="150">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../lab4-fox/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="65" column="0" selection-start="1381" selection-end="1381" vertical-scroll-proportion="0.43636364" vertical-offset="0" max-vertical-offset="825">
+              <folding>
+                <element signature="e#162#1058#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,6 +68,7 @@
         <option value="$PROJECT_DIR$/../../lectures/Lecture 4/inheritance-abstraction/app.yaml" />
         <option value="$PROJECT_DIR$/../../lectures/Lecture 4/inheritance-abstraction/css/styles.css" />
         <option value="$PROJECT_DIR$/../../lectures/Lecture 4/inheritance-abstraction/main.py" />
+        <option value="$PROJECT_DIR$/../lab4-fox/main.py" />
       </list>
     </option>
   </component>
@@ -106,45 +116,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="inheritance-abstraction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lab3-soccer-players" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="inheritance-abstraction" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lab3-soccer-players" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lab3-soccer-players" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lab3-soccer-players" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lab3-soccer-players" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="lab4-fox" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -158,7 +130,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../lectures/Lecture 4/inheritance-abstraction" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lab4-fox" />
     <property name="FullScreen" value="true" />
   </component>
   <component name="RunManager">
@@ -371,9 +343,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../lectures/Lecture 4/inheritance-abstraction/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="103" selection-start="1917" selection-end="1917" vertical-scroll-proportion="0.6363636" vertical-offset="0" max-vertical-offset="825">
+        <state line="63" column="30" selection-start="1385" selection-end="1385" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lab4-fox/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="0" selection-start="1381" selection-end="1381" vertical-scroll-proportion="0.43636364" vertical-offset="0" max-vertical-offset="825">
           <folding>
-            <element signature="e#305#1201#0" expanded="false" />
+            <element signature="e#162#1058#0" expanded="false" />
           </folding>
         </state>
       </provider>
