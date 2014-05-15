@@ -18,7 +18,23 @@ class MainHandler(webapp2.RequestHandler):
 
         print animals[0]
 
-        
+        self.response.write(p._open + p._links + p._close)
+
+        if self.request.GET:
+            animal = int(self.request.GET['animal'])
+
+            name = animals[animal].name
+            phylum = animals[animal].phylum
+            classs = animals[animal].classs
+            order = animals[animal].order
+            family = animals[animal].family
+            genus = animals[animal].genus
+            lifespan = animals[animal].lifespan
+            habitat = animals[animal].habitat
+            location = animals[animal].location
+            sound = animals[animal].sound
+
+            self.response.write(content)
 
 
 
@@ -33,7 +49,11 @@ class Page(object):
     </head>
     <body>
         """
-        self._content = "This is my home DEFAULT content"
+        self._links = """"
+            <a href="?animal=0">Eagle</a>
+            <a href="?animal=1">Pig</a>
+            <a href="?animal=2">Horse</a>
+        """
         self._close = """
     </body>
 </html>"""
@@ -62,11 +82,12 @@ class Page(object):
         return self.all
 
     def update(self):
-        self.all = self._open + self._content + self._close
+        self.all = self._open + self._links + self._close
         self.all = self.all.format(**locals())
 
 class Animal(object):
     def __init__(self):
+        self.name= ""
         self.phylum = ""
         self.classs = ""
         self.order = ""
@@ -88,7 +109,7 @@ class Animal(object):
 class Eagle(Animal):
     def __init__(self):
         Animal.__init__(self)
-
+        self.name= "Eagle"
         self.phylum = "Chordata"
         self.classs = "Aves"
         self.order = "Accipitriformes"
@@ -108,7 +129,7 @@ class Eagle(Animal):
 class Pig(Animal):
     def __init__(self):
         Animal.__init__(self)
-
+        self.name = "Pig"
         self.phylum = "Chordata"
         self.classs = "Mammalia"
         self.order = "Artiodactyla"
@@ -129,7 +150,7 @@ class Pig(Animal):
 class Horse(Animal):
     def __init__(self):
         Animal.__init__(self)
-
+        self.name= "Horse"
         self.phylum = "Chordata"
         self.classs = "Mammalia"
         self.order = "Perissodactyla"
