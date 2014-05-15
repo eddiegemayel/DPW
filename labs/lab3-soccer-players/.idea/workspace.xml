@@ -27,7 +27,16 @@
         <entry file="file://$PROJECT_DIR$/../../lectures/Lecture 4/inheritance-abstraction/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="43" column="28" selection-start="926" selection-end="926" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
-              <folding />
+              <folding>
+                <marker date="1400113717000" expanded="true" signature="58:277" placeholder="..." />
+                <marker date="1400113717000" expanded="true" signature="77:277" placeholder="..." />
+                <marker date="1400113717000" expanded="true" signature="300:1201" placeholder="..." />
+                <marker date="1400113717000" expanded="true" signature="324:729" placeholder="..." />
+                <marker date="1400113717000" expanded="true" signature="1025:1071" placeholder="..." />
+                <marker date="1400113717000" expanded="true" signature="1094:1201" placeholder="..." />
+                <marker date="1400113717000" expanded="true" signature="1224:1978" placeholder="..." />
+                <marker date="1400113717000" expanded="true" signature="1813:1978" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,7 +53,7 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../lab4-fox/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="24" selection-start="2384" selection-end="2384" vertical-scroll-proportion="0.8909091" vertical-offset="285" max-vertical-offset="3225">
+            <state line="56" column="48" selection-start="1920" selection-end="1920" vertical-scroll-proportion="0.5272727" vertical-offset="405" max-vertical-offset="3225">
               <folding />
             </state>
           </provider>
@@ -343,7 +352,16 @@
     <entry file="file://$PROJECT_DIR$/../../lectures/Lecture 4/inheritance-abstraction/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="28" selection-start="926" selection-end="926" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1305">
-          <folding />
+          <folding>
+            <marker date="1400113717000" expanded="true" signature="58:277" placeholder="..." />
+            <marker date="1400113717000" expanded="true" signature="77:277" placeholder="..." />
+            <marker date="1400113717000" expanded="true" signature="300:1201" placeholder="..." />
+            <marker date="1400113717000" expanded="true" signature="324:729" placeholder="..." />
+            <marker date="1400113717000" expanded="true" signature="1025:1071" placeholder="..." />
+            <marker date="1400113717000" expanded="true" signature="1094:1201" placeholder="..." />
+            <marker date="1400113717000" expanded="true" signature="1224:1978" placeholder="..." />
+            <marker date="1400113717000" expanded="true" signature="1813:1978" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -377,7 +395,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../lab4-fox/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="24" selection-start="2384" selection-end="2384" vertical-scroll-proportion="0.8909091" vertical-offset="285" max-vertical-offset="3225">
+        <state line="56" column="48" selection-start="1920" selection-end="1920" vertical-scroll-proportion="0.5272727" vertical-offset="405" max-vertical-offset="3225">
           <folding />
         </state>
       </provider>

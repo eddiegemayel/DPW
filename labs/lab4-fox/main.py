@@ -39,7 +39,7 @@ class MainHandler(webapp2.RequestHandler):
             <div class="animalContent">
             <h2>{name}</h2>
 
-                <div id="labels">
+                <div class="labelContainer">
                     <p class="label"><strong>Animal Name:</strong></p>
                     <p class="label"><strong>Phylum:</strong></p>
                     <p class="label"><strong>Class:</strong></p>
@@ -52,17 +52,17 @@ class MainHandler(webapp2.RequestHandler):
                     <p class="label"><strong>Sound It Makes:</strong></p>
                 </div>
 
-                <div id="info">
-                    <p class="stats">{name}</p>
-                    <p class="stats">{phylum}</p>
-                    <p class="stats">{classs}</p>
-                    <p class="stats">{order}</p>
-                    <p class="stats">{family}</p>
-                    <p class="stats">{genus}</p>
-                    <p class="stats">{lifespan}</p>
-                    <p class="stats">{habitat}</p>
-                    <p class="stats">{location}</p>
-                    <p class="stats">{sound}</p>
+                <div class="infoContainer">
+                    <p class="info">{name}</p>
+                    <p class="info">{phylum}</p>
+                    <p class="info">{classs}</p>
+                    <p class="info">{order}</p>
+                    <p class="info">{family}</p>
+                    <p class="info">{genus}</p>
+                    <p class="info">{lifespan}</p>
+                    <p class="info">{habitat}</p>
+                    <p class="info">{location}</p>
+                    <p class="info">{sound}</p>
                 </div>
 
                 <div class="pic">
