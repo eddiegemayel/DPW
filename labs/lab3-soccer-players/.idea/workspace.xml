@@ -22,44 +22,7 @@
     <favorites_list name="lab3-soccer-players" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../lectures/Lecture 4/inheritance-abstraction/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="28" selection-start="926" selection-end="926" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
-              <folding>
-                <marker date="1400113717000" expanded="true" signature="58:277" placeholder="..." />
-                <marker date="1400113717000" expanded="true" signature="77:277" placeholder="..." />
-                <marker date="1400113717000" expanded="true" signature="300:1201" placeholder="..." />
-                <marker date="1400113717000" expanded="true" signature="324:729" placeholder="..." />
-                <marker date="1400113717000" expanded="true" signature="1025:1071" placeholder="..." />
-                <marker date="1400113717000" expanded="true" signature="1094:1201" placeholder="..." />
-                <marker date="1400113717000" expanded="true" signature="1224:1978" placeholder="..." />
-                <marker date="1400113717000" expanded="true" signature="1813:1978" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="64" selection-start="3760" selection-end="3808" vertical-scroll-proportion="0.0" vertical-offset="975" max-vertical-offset="3120">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../lab4-fox/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="3" selection-start="25" selection-end="25" vertical-scroll-proportion="0.036363635" vertical-offset="0" max-vertical-offset="3450">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -81,8 +44,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="x" value="20" />
+    <option name="y" value="22" />
+    <option name="width" value="1400" />
+    <option name="height" value="860" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -153,7 +118,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../lab4-fox" />
-    <property name="FullScreen" value="true" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="tests" factoryName="py.test">
@@ -289,14 +254,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <frame x="20" y="22" width="1400" height="860" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25714287" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -349,29 +314,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../lectures/Lecture 4/inheritance-abstraction/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="28" selection-start="926" selection-end="926" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1305">
-          <folding>
-            <marker date="1400113717000" expanded="true" signature="58:277" placeholder="..." />
-            <marker date="1400113717000" expanded="true" signature="77:277" placeholder="..." />
-            <marker date="1400113717000" expanded="true" signature="300:1201" placeholder="..." />
-            <marker date="1400113717000" expanded="true" signature="324:729" placeholder="..." />
-            <marker date="1400113717000" expanded="true" signature="1025:1071" placeholder="..." />
-            <marker date="1400113717000" expanded="true" signature="1094:1201" placeholder="..." />
-            <marker date="1400113717000" expanded="true" signature="1224:1978" placeholder="..." />
-            <marker date="1400113717000" expanded="true" signature="1813:1978" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="64" selection-start="3760" selection-end="3808" vertical-scroll-proportion="0.0" vertical-offset="975" max-vertical-offset="3120">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../lab4-fox/app.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="17" selection-start="122" selection-end="122" vertical-scroll-proportion="0.15" vertical-offset="0" max-vertical-offset="800">
@@ -393,9 +335,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../lectures/Lecture 4/inheritance-abstraction/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="28" selection-start="926" selection-end="926" vertical-scroll-proportion="0.7818182" vertical-offset="0" max-vertical-offset="1305">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="64" selection-start="3760" selection-end="3808" vertical-scroll-proportion="0.7818182" vertical-offset="975" max-vertical-offset="3120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../lab4-fox/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="3" selection-start="25" selection-end="25" vertical-scroll-proportion="0.036363635" vertical-offset="0" max-vertical-offset="3450">
+        <state line="158" column="18" selection-start="4786" selection-end="4786" vertical-scroll-proportion="0.21818182" vertical-offset="2190" max-vertical-offset="3450">
           <folding />
         </state>
       </provider>
