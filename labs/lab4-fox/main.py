@@ -37,7 +37,7 @@ class MainHandler(webapp2.RequestHandler):
 
             content='''
             <div class="animalContent">
-            <h2>{name}</h2>
+            <h2>The {name}</h2>
 
                 <div class="labelContainer">
                     <p class="label"><strong>Animal Name:</strong></p>
