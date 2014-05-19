@@ -1,27 +1,36 @@
+#Eddie Gemayel
+#Lab 4
+#May 19 2014
 import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
 
+        #instantiate the page class
         p = Page()
 
+        #creating animals from their respective sub classes
         eagle = Eagle()
         pig = Pig()
         horse = Horse()
 
+        #setting each of their sounds using polymorphism
         eagle.sound = "Caaaaw!"
         pig.sound = "Oink Oink!"
         horse.sound = "Neigh!"
 
+        #put the animals into an array, that was its easier to call later when user clicks a link
         animals = [eagle, pig, horse]
 
-        print animals[0]
-
+        #no matter what animal is selected always print out the opening and links of the html page
         self.response.write(p._open + p._links)
 
+        #once something is selected
         if self.request.GET:
+            #get which animal link was clicked on
             animal = int(self.request.GET['animal'])
 
+            #store all its info into local variables
             name = animals[animal].name
             phylum = animals[animal].phylum
             classs = animals[animal].classs
@@ -35,6 +44,7 @@ class MainHandler(webapp2.RequestHandler):
 
             #p.title = name
 
+            #create new page content based on selected animal link
             content='''
             <div class="animalContent">
             <h2>The {name}</h2>
@@ -81,7 +91,7 @@ class MainHandler(webapp2.RequestHandler):
         self.response.write(p._close)
 
 
-
+#basic html page object
 class Page(object):
     def __init__(self):
         self._open = """
@@ -124,6 +134,7 @@ class Page(object):
         self.all = self._open + self._links + self._close
         self.all = self.all.format(**locals())
 
+#animal super class
 class Animal(object):
     def __init__(self):
         self.name= ""
@@ -145,6 +156,7 @@ class Animal(object):
     def sound(self, new):
         self.__sound = new
 
+#animal subclasses
 class Eagle(Animal):
     def __init__(self):
         Animal.__init__(self)
