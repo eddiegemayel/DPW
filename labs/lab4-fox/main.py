@@ -62,7 +62,7 @@ class MainHandler(webapp2.RequestHandler):
                     <p class="info">{lifespan}</p>
                     <p class="info">{habitat}</p>
                     <p class="info">{location}</p>
-                    <p class="info">{sound}</p>
+                    <p class="info"><strong>{sound}</strong></p>
                 </div>
 
                 <div class="pic">
@@ -88,15 +88,18 @@ class Page(object):
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Much Animals</title><!--calling the function-->
+        <title>Much Animals</title>
         <link rel ="stylesheet" type="text/css" href="css/main.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Exo+2|Alef' rel='stylesheet' type='text/css'>
     </head>
     <body>
         """
         self._links = """
+        <div class="links">
             <a href="?animal=0">Eagle</a>
             <a href="?animal=1">Pig</a>
             <a href="?animal=2">Horse</a>
+        </div>
         """
         self._close = """
     </body>

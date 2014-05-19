@@ -1,0 +1,56 @@
+body{
+	background-image: url(images/light_toast.png);
+}
+
+
+h1, h2, h3{
+	font-family: 'Alegreya Sans SC', sans-serif;
+	margin-left: 5%;
+	text-decoration: overline underline;
+	margin-bottom: 2.5%;
+	margin-top: 2.5%;
+}
+
+p{
+	font-family: 'Exo 2', sans-serif;
+}
+
+a{
+	font-family: 'Alef', sans-serif;
+	text-decoration: none;
+}
+
+a:visited{
+	color: black;
+}
+
+a:hover{
+	color: #E0D9E0;
+}
+
+img{
+	border : 1px solid #E0412F;
+}
+
+.links{
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+.labelContainer {
+	float: left;
+	clear: left;
+	width: 15%;
+	margin-left: 15%;
+}
+
+.animalContent{
+	margin: 0 auto;
+}
+
+.infoContainer {
+	margin-left: 1%;
+	float:left;
+	width: 20%;
+}
