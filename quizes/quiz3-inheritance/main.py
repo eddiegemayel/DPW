@@ -5,11 +5,14 @@ import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
+
         bmw = Car()
+        boeng = Airplane()
 
         bmw.sound = "Vroom"
+        boeng.sound = "Swooosh"
 
-        self.response.write(bmw.sound)
+        self.response.write(boeng.sound)
 
 
 
@@ -44,6 +47,32 @@ class Car(Vehicle):
         self.wheels = 4
         self.miles_per_gallon = 30
         self.power_steering = "Yes"
+
+    @property
+    def sound(self):
+        return self.__sound
+
+    @sound.setter
+    def sound(self, new):
+        self.__sound = new
+
+class Airplane(Vehicle):
+    def __init__(self):
+        Vehicle.__init__(self)
+        self.weight = 100000
+        self.top_speed = 600
+        self.passengers = 200
+        self.bathrooms = 2
+        self.in_flight_movie = "Yes"
+        self.snacks = "Yes"
+
+    @property
+    def sound(self):
+        return self.__sound
+
+    @sound.setter
+    def sound(self, new):
+        self.__sound = new
 
 
 
