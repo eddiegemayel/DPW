@@ -10,12 +10,14 @@ class MainHandler(webapp2.RequestHandler):
         bmw = Car()
         boeng = Airplane()
 
+
+
         #setting the new sounds to each vehicle
         bmw.sound = "Vroom"
         boeng.sound = "Swooosh"
 
         #just to test it
-        self.response.write(boeng.sound)
+        self.response.write(bmw.movement())
 
 
 #super abstract class never seen by the user
@@ -53,6 +55,9 @@ class Car(Vehicle):
         self.miles_per_gallon = 30
         self.power_steering = "Yes"
 
+    def movement(self):
+        print "I am driving somewhere"
+
     @property
     def sound(self):
         return self.__sound
@@ -70,6 +75,9 @@ class Airplane(Vehicle):
         self.bathrooms = 2
         self.in_flight_movie = "Yes"
         self.snacks = "Yes"
+
+    def movement(self):
+        print "I am flying somewhere"
 
     @property
     def sound(self):
