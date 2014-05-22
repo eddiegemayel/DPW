@@ -47,6 +47,7 @@ class Counter(object):
     def __init__(self):
 
         self.__count = 0
+
         self.content = """
         {self.count}
         """
