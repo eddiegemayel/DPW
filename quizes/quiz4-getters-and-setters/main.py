@@ -17,7 +17,9 @@ class MainHandler(webapp2.RequestHandler):
         else:
             counter = 0
 
+
         page.count = counter
+
         #page.update()
         self.response.write(page.print_out())
 
@@ -33,6 +35,19 @@ class Page(object):
     </head>
     <body>
         """
+
+        self.close = """
+    </body>
+</html>
+        """
+
+
+    def print_out(self):
+
+        return self.open + self.close
+
+class Counter(object):
+    def __init__(self):
         self.content = """
         {self.count}
         """
@@ -41,11 +56,6 @@ class Page(object):
         <br/>
         <a href='?count=count'>Count Up</a>
         """
-        self.close = """
-    </body>
-</html>
-        """
-
 
     @property
     def count(self):
@@ -63,12 +73,6 @@ class Page(object):
     @button.setter
     def button(self, b):
         self.__button = b
-
-
-
-    def print_out(self):
-        #self.content.format(**locals())
-        return self.open + self.content + self.button + self.close
 
 
 app = webapp2.WSGIApplication([
