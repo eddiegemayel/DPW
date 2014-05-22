@@ -6,8 +6,6 @@ import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-
-
         page_counter = Counter()
 
         self.open = """
@@ -28,16 +26,18 @@ class MainHandler(webapp2.RequestHandler):
 
         if self.request.GET:
             counter += 1
-
         else:
             counter = 0
 
 
         page_counter.count = counter
 
-        #page.update()
-        self.response.write(self.open+self.close)
-        self.response.write(page_counter.content + page_counter.button)
+
+        self.response.write(self.open)
+
+        self.response.write(page_counter.print_out())
+
+        self.response.write(self.close)
 
 class Page(object):
     def __init__(self):
@@ -45,6 +45,7 @@ class Page(object):
 
 class Counter(object):
     def __init__(self):
+
         self.__count = 0
         self.content = """
         {self.count}
@@ -52,7 +53,7 @@ class Counter(object):
         self.__button = """
 
         <br/>
-        <a href='?count=counter'>Count Up</a>
+        <a href='?counter=count'>Count Up</a>
         """
 
     @property
@@ -63,6 +64,7 @@ class Counter(object):
     def count(self, c):
         self.__count = c
         self.content.format(**locals())
+
 
     @property
     def button(self):
