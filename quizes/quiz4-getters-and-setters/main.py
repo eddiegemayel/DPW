@@ -34,8 +34,27 @@ class Page(object):
 </html>
         """
 
+
+    @property
+    def count(self):
+        return self.__count
+
+    @count.setter
+    def count(self, c):
+        self.__count = c
+
+
+    @property
+    def button(self):
+        return self.__button
+
+    @button.setter
+    def button(self, b):
+        self.__button = b
+
+
     def update(self):
-        
+        self.count_area.format(**locals())
 
 
 
