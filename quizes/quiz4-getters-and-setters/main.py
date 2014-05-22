@@ -7,9 +7,19 @@ import webapp2
 class MainHandler(webapp2.RequestHandler):
     def get(self):
 
+        page = Page()
 
-        self.response.write('Hello world!')
+        global counter
 
+        if self.request.GET:
+            counter += 1
+
+        else:
+            counter = 0
+
+        page.count = counter
+        #page.update()
+        self.response.write(page.print_out())
 
 class Page(object):
     def __init__(self):
@@ -23,11 +33,13 @@ class Page(object):
     </head>
     <body>
         """
-        self.count_area = """
+        self.content = """
         {self.count}
         """
         self.__button = """
-        <a href=?count=button>Count Up</a>
+
+        <br/>
+        <a href='?count=count'>Count Up</a>
         """
         self.close = """
     </body>
@@ -42,7 +54,7 @@ class Page(object):
     @count.setter
     def count(self, c):
         self.__count = c
-
+        self.content.format(**locals())
 
     @property
     def button(self):
@@ -53,9 +65,10 @@ class Page(object):
         self.__button = b
 
 
-    def update(self):
-        self.count_area.format(**locals())
 
+    def print_out(self):
+        #self.content.format(**locals())
+        return self.open + self.content + self.button + self.close
 
 
 app = webapp2.WSGIApplication([

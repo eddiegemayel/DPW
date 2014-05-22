@@ -26,7 +26,7 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../../quizes/quiz4-getters-and-setters/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="14" selection-start="984" selection-end="984" vertical-scroll-proportion="1.1272727" vertical-offset="0" max-vertical-offset="1020">
+            <state line="41" column="29" selection-start="696" selection-end="696" vertical-scroll-proportion="0.74545455" vertical-offset="0" max-vertical-offset="1215">
               <folding />
             </state>
           </provider>
@@ -97,16 +97,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="quiz4-getters-and-setters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weather-app-minidom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="final-project" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -371,7 +361,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="68" selection-start="2144" selection-end="2172" vertical-scroll-proportion="-0.16363636" vertical-offset="1080" max-vertical-offset="1905">
+        <state line="63" column="68" selection-start="2144" selection-end="2172" vertical-scroll-proportion="0.34545454" vertical-offset="660" max-vertical-offset="1905">
           <folding>
             <element signature="e#31#45#0" expanded="true" />
           </folding>
@@ -380,7 +370,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../quizes/quiz4-getters-and-setters/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="14" selection-start="984" selection-end="984" vertical-scroll-proportion="1.1272727" vertical-offset="0" max-vertical-offset="1020">
+        <state line="41" column="29" selection-start="696" selection-end="696" vertical-scroll-proportion="0.74545455" vertical-offset="0" max-vertical-offset="1215">
           <folding />
         </state>
       </provider>
