@@ -11,14 +11,15 @@ import urllib2
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         view = FormPage()
-        view.form_header = "Trailers"
-        view.title = "Movie trailers"
+        view.form_header = "Songs"
+        view.title = "Search a song"
         self.response.write(view.print_out())
 
 
         if self.request.GET:
-            code = self.request.GET["code"]
-            url = "http://api.traileraddict.com/?film=" + code
+            artist = self.request.GET["code1"]
+            song = self.request.GET["code2"]
+            url = "http://lyrics.wikia.com/api.php?artist="+artist+"&song="+song+"&fmt=xml"
             #go get the api info
             req = urllib2.Request(url)
             opener = urllib2.build_opener()
@@ -29,7 +30,10 @@ class MainHandler(webapp2.RequestHandler):
 
 
             #look at elements within the xml
-            self.response.write(xmldoc.getElementsByTagName("title"))
+
+            self.response.write(xmldoc.getElementsByTagName("artist")[0].firstChild.nodeValue + "<br/>")
+            self.response.write(xmldoc.getElementsByTagName("song")[0].firstChild.nodeValue + "<br/>")
+            self.response.write(xmldoc.getElementsByTagName("lyrics")[0].firstChild.nodeValue)
 
 
 

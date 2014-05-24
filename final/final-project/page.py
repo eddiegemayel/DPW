@@ -50,7 +50,8 @@ class FormPage(Page):
         self.__form_open = """
         <form method="GET" action="">"""
         self.__inputs = """
-        <input type="text" name = "code" placeholder="Trailer Name"  />
+        <input type="text" name = "code1" placeholder="artist name"  />
+        <input type="text" name = "code2" placeholder="song name"  />
         <input type="submit" name = "submit" />
         """
         self.__form_close = """</form>"""
