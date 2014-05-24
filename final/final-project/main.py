@@ -19,6 +19,10 @@ class MainHandler(webapp2.RequestHandler):
         if self.request.GET:
             artist = self.request.GET["code1"]
             song = self.request.GET["code2"]
+
+            artist.replace(" ", "_")
+            song.replace(" ", "_")
+
             url = "http://lyrics.wikia.com/api.php?artist="+artist+"&song="+song+"&fmt=xml"
             #go get the api info
             req = urllib2.Request(url)
