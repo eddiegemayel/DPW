@@ -26,7 +26,7 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../../final/final-project/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="28" selection-start="419" selection-end="419" vertical-scroll-proportion="0.3272727" vertical-offset="0" max-vertical-offset="825">
+            <state line="41" column="0" selection-start="1267" selection-end="1267" vertical-scroll-proportion="0.74545455" vertical-offset="0" max-vertical-offset="825">
               <folding>
                 <element signature="e#35#49#0" expanded="true" />
               </folding>
@@ -37,7 +37,7 @@
       <file leaf-file-name="page.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../final/final-project/page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="30" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1035">
+            <state line="46" column="33" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
               <folding />
             </state>
           </provider>
@@ -355,14 +355,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../final/final-project/page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="30" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1035">
+        <state line="46" column="33" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../final/final-project/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="28" selection-start="419" selection-end="419" vertical-scroll-proportion="0.3272727" vertical-offset="0" max-vertical-offset="825">
+        <state line="41" column="0" selection-start="1267" selection-end="1267" vertical-scroll-proportion="0.74545455" vertical-offset="0" max-vertical-offset="825">
           <folding>
             <element signature="e#35#49#0" expanded="true" />
           </folding>

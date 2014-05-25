@@ -5,7 +5,7 @@ class Page(object):
 <html>
     <head>
         <title>{self.title}</title><!--calling the function-->
-        <link rel ="stylesheet" type="text/css" href="{self.css_url}"/>
+        <link rel ="stylesheet" type="text/css" href=""/>
     </head>
     <body>
         """
@@ -13,7 +13,6 @@ class Page(object):
         self._close = """
     </body>
 </html>"""
-        self._css_url = ""
         self._title = ""
         self.all = ""
 
@@ -25,13 +24,6 @@ class Page(object):
     def title(self, t):
         self._title = t
 
-    @property
-    def css_url(self):
-        return self._css_url
-
-    @css_url.setter
-    def css_url(self, c):
-        self._css_url = c
 
     def print_out(self):
         self.update()
@@ -50,9 +42,9 @@ class FormPage(Page):
         self.__form_open = """
         <form method="GET" action="">"""
         self.__inputs = """
-        <input type="text" name = "code1" placeholder="artist name"  />
-        <input type="text" name = "code2" placeholder="song name"  />
-        <input type="submit" name = "submit" />
+        <input type="text" name = "code1" placeholder="Artist name"  />
+        <input type="text" name = "code2" placeholder="Song name"  />
+        <input type="submit" name="submit" />
         """
         self.__form_close = """</form>"""
         self.form_header = " "

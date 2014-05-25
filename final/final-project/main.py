@@ -11,8 +11,8 @@ import urllib2
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         view = FormPage()
-        view.form_header = "Songs"
-        view.title = "Search a song"
+        view.form_header = "<h1>Search Song Lyrics!</h1>"
+        view.title = "Lyrics Wiki"
         self.response.write(view.print_out())
 
 
@@ -38,6 +38,9 @@ class MainHandler(webapp2.RequestHandler):
             self.response.write(xmldoc.getElementsByTagName("artist")[0].firstChild.nodeValue + "<br/>")
             self.response.write(xmldoc.getElementsByTagName("song")[0].firstChild.nodeValue + "<br/>")
             self.response.write(xmldoc.getElementsByTagName("lyrics")[0].firstChild.nodeValue)
+
+
+
 
 
 
