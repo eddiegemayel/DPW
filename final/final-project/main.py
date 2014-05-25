@@ -13,7 +13,7 @@ class MainHandler(webapp2.RequestHandler):
         view = FormPage()
         view.form_header = "<h1>Search Song Lyrics!</h1>"
         view.title = "Lyrics Wiki"
-        self.response.write(view.print_out())
+        #self.response.write(view.print_out())
 
 
         if self.request.GET:
@@ -34,7 +34,7 @@ class MainHandler(webapp2.RequestHandler):
             view.page_content = l_view.content
 
 
-            self.response.write(view.print_out())
+        self.response.write(view.print_out())
 
 
 class LyricModel(object):
@@ -62,20 +62,26 @@ class LyricModel(object):
 
     #dont want anyone overwriting data object im making it a property
     #with just the getter
+
+
     @property
     def ldo(self):
         return self.__ldo
 
+
     @property
     def code1(self):
         return self.__code1
+
     @code1.setter
     def code1(self, c):
         self.__code1 = c
 
+
     @property
     def code2(self):
         return self.__code2
+
     @code2.setter
     def code2(self, c):
         self.__code2 = c
