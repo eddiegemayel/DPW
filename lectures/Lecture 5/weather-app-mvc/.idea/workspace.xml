@@ -26,10 +26,19 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="0" selection-start="1417" selection-end="2864" vertical-scroll-proportion="0.21818182" vertical-offset="495" max-vertical-offset="1905">
+            <state line="21" column="34" selection-start="574" selection-end="574" vertical-scroll-proportion="0.38181818" vertical-offset="0" max-vertical-offset="1905">
               <folding>
                 <element signature="e#31#45#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="16" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1035">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -342,11 +351,6 @@
         <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="800" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="20" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1035" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../quizes/quiz4-getters-and-setters/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="0" selection-start="462" selection-end="462" vertical-scroll-proportion="0.54545456" vertical-offset="0" max-vertical-offset="1335">
@@ -361,9 +365,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="16" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1417" selection-end="2864" vertical-scroll-proportion="0.21818182" vertical-offset="495" max-vertical-offset="1905">
+        <state line="21" column="34" selection-start="574" selection-end="574" vertical-scroll-proportion="0.38181818" vertical-offset="0" max-vertical-offset="1905">
           <folding>
             <element signature="e#31#45#0" expanded="true" />
           </folding>

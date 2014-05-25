@@ -48,9 +48,14 @@ class FormPage(Page):
         """
         self.__form_close = """</form>"""
         self.form_header = " "
-        self._content = self.form_header + self.__form_open + self.__inputs + self.__form_close
+        self.page_content = ""
+        #self._content = self.form_header + self.__form_open + self.__inputs + self.__form_close
 
 
     def update(self):
-        self.all = self._open + self.form_header + self.__form_open + self.__inputs + self.__form_close + self._close
+        self.all = self._open + self.form_header + self.__form_open + self.__inputs + self.__form_close + self.page_content + self._close
+        self.all = self.all.format(**locals())
+
+    def update2(self):
+        self.all = self._open + self.page_content + self._close
         self.all = self.all.format(**locals())
