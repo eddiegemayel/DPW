@@ -12,9 +12,7 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         view = FormPage()
         view.form_header = "<h1>Search Song Lyrics!</h1>"
-        view.title = "Lyrics Wiki"
-        #self.response.write(view.print_out())
-
+        view.title = "Lyrics Wiki API"
 
         if self.request.GET:
             # artist = self.request.GET["code1"]
@@ -117,7 +115,7 @@ class LyricView(object):
         self.content = self.content.format(**locals())
 
 
-#old code
+            #old code
             # artist.replace(" ", "_")
             # song.replace(" ", "_")
 

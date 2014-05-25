@@ -5,7 +5,7 @@ class Page(object):
 <html>
     <head>
         <title>{self.title}</title><!--calling the function-->
-        <link rel ="stylesheet" type="text/css" href=""/>
+        <link rel ="stylesheet" type="text/css" href="css/main.css"/>
     </head>
     <body>
         """

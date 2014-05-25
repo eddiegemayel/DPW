@@ -346,11 +346,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="800" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../quizes/quiz4-getters-and-setters/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="0" selection-start="462" selection-end="462" vertical-scroll-proportion="0.54545456" vertical-offset="0" max-vertical-offset="1335">
@@ -368,6 +363,13 @@
     <entry file="file://$PROJECT_DIR$/page.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="16" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="800">
           <folding />
         </state>
       </provider>
