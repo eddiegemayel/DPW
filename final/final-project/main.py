@@ -105,11 +105,11 @@ class LyricView(object):
 
     def update(self):
         self.content = '''
-        <div>
+        <div class="content">
             <h3>Song : {self.ldo.song}</h3>
                 <p><strong>By : </strong> {self.ldo.artist}</p>
                 <p><strong>Lyric preview : </strong> {self.ldo.lyrics}</p>
-                <p><strong>Link to full lyrics : </strong> <a href="{self.ldo.lyric_url}">{self.ldo.lyric_url}</a></p>
+                <p><strong><a href="{self.ldo.lyric_url}">Link to full lyrics</a></strong></p>
         </div>
 
         '''

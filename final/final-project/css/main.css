@@ -19,6 +19,12 @@ h1{
     padding-top: 5px; 
 }
 
+h2{
+	width:70%;
+	float: left;
+	clear:right;
+}
+
 h2, h3{
 	font-family: 'Montserrat', sans-serif;
 }
@@ -27,14 +33,25 @@ p{
 	font-family: 'Raleway', sans-serif;
 }
 
+input{
+	width:190px;
+	border: solid #E89C0C 1px;
+}
+
 .header{
-	border-left: 2px solid #E89C0C;
-	border-right: 2px solid #E89C0C;
-	border-bottom: 2px solid #E89C0C;
+	border-left: 2px solid #442BE8;
+	border-right: 2px solid #442BE8;
+	border-bottom: 2px solid #442BE8;
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-top: -21px;
 	background-color: #4490E8;
+}
+
+.content{
+	/*border: 1px solid black;*/
+	width: 75%;
+	margin-top: 40px;
 }
 
 .btn {
@@ -53,6 +70,7 @@ p{
   padding: 10px 20px 10px 20px;
   border: solid #E89C0C 1px;
   text-decoration: none;
+  margin-right: 185px;
   float:right;
   clear: right;
 }
@@ -70,9 +88,14 @@ p{
 #artistInput{
 	float:right;
 	clear: right;
+	margin-top: 19px;
+	margin-right: 75px;
+	margin-bottom: 10px;
 }
 
 #songInput{
 	float:right;
 	clear: right;
+	margin-right: 75px;
+	margin-bottom: 10px;
 }

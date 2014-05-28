@@ -25,7 +25,6 @@ class Page(object):
     def title(self, t):
         self._title = t
 
-
     def print_out(self):
         self.update()
         return self.all
@@ -41,11 +40,14 @@ class FormPage(Page):
         #super(FormPage, self).__init__()
 
         self.__form_open = """
+        <h2>Enter an artist and song title</h2>
         <form method="GET" action="">"""
         self.__inputs = """
+
         <input id="artistInput" type="text" name = "code1" placeholder="Artist name"  />
         <input id="songInput" type="text" name = "code2" placeholder="Song name"  />
         <button class="btn">Search</button>
+       
         """
         self.__form_close = """</form>"""
         self.form_header = """
