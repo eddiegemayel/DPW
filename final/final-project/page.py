@@ -9,9 +9,11 @@ class Page(object):
         <link href='http://fonts.googleapis.com/css?family=Montserrat|Raleway' rel='stylesheet' type='text/css'>
     </head>
     <body>
+        <div class="area">
         """
         self._content = "This is my DEFAULT content that shouldn't show up"
         self._close = """
+        </div>
     </body>
 </html>"""
         self._title = ""
@@ -52,7 +54,7 @@ class FormPage(Page):
         self.__form_close = """</form>"""
         self.form_header = """
             <div class="header">
-                <h1>Search Song Lyrics</h1>
+                <h1>Search For Song Lyrics</h1>
             </div>
         """
         self.page_content = ""

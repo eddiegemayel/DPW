@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../final/final-project/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="512" selection-end="512" vertical-scroll-proportion="0.3272727" vertical-offset="30" max-vertical-offset="2265">
+            <state line="127" column="34" selection-start="3299" selection-end="3299" vertical-scroll-proportion="0.0" vertical-offset="1440" max-vertical-offset="2265">
               <folding>
                 <element signature="e#35#49#0" expanded="true" />
               </folding>
@@ -34,10 +34,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="page.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../../final/final-project/page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
+            <state line="56" column="31" selection-start="1596" selection-end="1596" vertical-scroll-proportion="0.6545454" vertical-offset="300" max-vertical-offset="1125">
               <folding />
             </state>
           </provider>
@@ -58,8 +58,8 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/../../../quizes/quiz3-inheritance/main.py" />
         <option value="$PROJECT_DIR$/../../../final/final-project/app.yaml" />
-        <option value="$PROJECT_DIR$/../../../final/final-project/page.py" />
         <option value="$PROJECT_DIR$/../../../final/final-project/main.py" />
+        <option value="$PROJECT_DIR$/../../../final/final-project/page.py" />
       </list>
     </option>
   </component>
@@ -363,7 +363,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="32" selection-start="799" selection-end="859" vertical-scroll-proportion="0.54545456" vertical-offset="0" max-vertical-offset="825">
           <folding>
-            <element signature="e#29#43#0" expanded="true" />
+            <element signature="e#29#43#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -382,19 +382,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../final/final-project/page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../final/final-project/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="512" selection-end="512" vertical-scroll-proportion="0.3272727" vertical-offset="30" max-vertical-offset="2265">
+        <state line="127" column="34" selection-start="3299" selection-end="3299" vertical-scroll-proportion="0.0" vertical-offset="1440" max-vertical-offset="2265">
           <folding>
             <element signature="e#35#49#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../final/final-project/page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="31" selection-start="1596" selection-end="1596" vertical-scroll-proportion="0.6545454" vertical-offset="300" max-vertical-offset="1125">
+          <folding />
         </state>
       </provider>
     </entry>
