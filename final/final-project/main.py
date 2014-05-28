@@ -20,9 +20,10 @@ class MainHandler(webapp2.RequestHandler):
             # song.replace(" ", "_")
 
             l_model = LyricModel() #creates instance of the model
-            l_model.code1 = self.request.GET["code1"]
 
-            l_model.code2 = self.request.GET["code2"]
+            l_model.code1 = self.request.GET["code1"].replace(" ", "_")
+
+            l_model.code2 = self.request.GET["code2"].replace(" ", "_")
 
             l_model.send_req()
 
