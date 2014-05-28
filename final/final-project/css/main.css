@@ -35,7 +35,7 @@ p{
 
 input{
 	width:190px;
-	border: solid #E89C0C 1px;
+	border: 2px solid #E89C0C;
 }
 
 .header{
