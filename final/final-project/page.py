@@ -47,7 +47,7 @@ class FormPage(Page):
         <input id="artistInput" type="text" name = "code1" placeholder="Artist name"  />
         <input id="songInput" type="text" name = "code2" placeholder="Song name"  />
         <button class="btn">Search</button>
-       
+
         """
         self.__form_close = """</form>"""
         self.form_header = """
