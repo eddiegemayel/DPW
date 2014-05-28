@@ -1,0 +1,36 @@
+body{
+	background-color: #F9F9FA;
+}
+
+h1{
+	font-family: 'Montserrat', sans-serif;
+   -webkit-text-stroke: 1px black;
+   color: #E89C0C;
+   text-shadow:
+    2px 2px 0 #000,
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 5px; 
+}
+
+h2, h3{
+	font-family: 'Montserrat', sans-serif;
+}
+
+p{
+	font-family: 'Raleway', sans-serif;
+}
+
+.header{
+	border-left: 2px solid #E89C0C;
+	border-right: 2px solid #E89C0C;
+	border-bottom: 2px solid #E89C0C;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: -21px;
+	background-color: #4490E8;
+}

@@ -11,7 +11,6 @@ import urllib2
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         view = FormPage()
-        view.form_header = "<h1>Search Song Lyrics!</h1>"
         view.title = "Lyrics Wiki API"
 
         if self.request.GET:

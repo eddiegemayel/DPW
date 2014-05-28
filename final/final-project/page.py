@@ -6,6 +6,7 @@ class Page(object):
     <head>
         <title>{self.title}</title><!--calling the function-->
         <link rel ="stylesheet" type="text/css" href="css/main.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat|Raleway' rel='stylesheet' type='text/css'>
     </head>
     <body>
         """
@@ -47,7 +48,11 @@ class FormPage(Page):
         <input type="submit" name="submit" />
         """
         self.__form_close = """</form>"""
-        self.form_header = " "
+        self.form_header = """
+            <div class="header">
+                <h1>Search Song Lyrics</h1>
+            </div>
+        """
         self.page_content = ""
         #self._content = self.form_header + self.__form_open + self.__inputs + self.__form_close
 
