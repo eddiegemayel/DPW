@@ -10,45 +10,48 @@ import urllib2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
+        #make the view from the form page
         view = FormPage()
         view.title = "Lyrics Wiki API"
 
         if self.request.GET:
-            # artist = self.request.GET["code1"]
-            # song = self.request.GET["code2"]
-            # artist.replace(" ", "_")
-            # song.replace(" ", "_")
+            #creates instance of the model
+            l_model = LyricModel()
 
-            l_model = LyricModel() #creates instance of the model
-
+            #replace any spaces in the entry with underscores so the API understands it
             l_model.code1 = self.request.GET["code1"].replace(" ", "_")
-
             l_model.code2 = self.request.GET["code2"].replace(" ", "_")
 
+            #send the data and parse it with send_req method
             l_model.send_req()
 
+            #create instance of lyric view
             l_view = LyricView()
 
-            l_view.ldo = l_model.ldo # transfers wdo from model to the view
+            # transfers wdo from model to the view
+            l_view.ldo = l_model.ldo
 
+            #update view and format the locals
             l_view.update()
 
+            #make the empty page_content string into the content from lyric view
             view.page_content = l_view.content
 
-
+        #print it all oout
+        #its important that this print out is here and NOT inside the if statement
         self.response.write(view.print_out())
 
 
 class LyricModel(object):
-    """ this class handles data requests
-    """
+    #this class handles data requests
+
     def __init__(self):
         self.url = "http://lyrics.wikia.com/api.php?artist="
         self.__code1 = ""
         self.__code2 = ""
 
     def send_req(self):
-
+        #collects and parses the xml data
         req = urllib2.Request(self.url +self.code1+"&song="+self.code2+"&fmt=xml")
         opener = urllib2.build_opener()
         data = opener.open(req)
@@ -92,11 +95,9 @@ class LyricModel(object):
 
 
 class LyricDataObject(object):
-    """
-    this holds info sent in by the api
-    """
-
+    #this holds info sent in by the api
     def __init__(self):
+        #empty variables that will be filled later
         self.artist = ""
         self.song = ""
         self.lyrics = ""
@@ -105,10 +106,13 @@ class LyricDataObject(object):
 class LyricView(object):
     #just showing weather info from the api
     def __init__(self):
-        self.wdo = LyricDataObject()
+
+        self.ldo = LyricDataObject()
         self.content = ""
 
     def update(self):
+        #update the content with variables than format the locals
+
         self.content = '''
         <div class="content">
             <h3>{self.ldo.song}</h3>
@@ -120,26 +124,6 @@ class LyricView(object):
         '''
         self.content = self.content.format(**locals())
 
-
-            #old code
-            # artist.replace(" ", "_")
-            # song.replace(" ", "_")
-
-            #url = "http://lyrics.wikia.com/api.php?artist="+artist+"&song="+song+"&fmt=xml"
-            #go get the api info
-            # req = urllib2.Request(url)
-            # opener = urllib2.build_opener()
-            # data = opener.open(req)
-
-            #parse it
-            #xmldoc = minidom.parse(data)
-
-
-            #look at elements within the xml
-
-            # self.response.write(xmldoc.getElementsByTagName("artist")[0].firstChild.nodeValue + "<br/>")
-            # self.response.write(xmldoc.getElementsByTagName("song")[0].firstChild.nodeValue + "<br/>")
-            # self.response.write(xmldoc.getElementsByTagName("lyrics")[0].firstChild.nodeValue)
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
