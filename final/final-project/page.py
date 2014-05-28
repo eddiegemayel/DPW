@@ -43,9 +43,9 @@ class FormPage(Page):
         self.__form_open = """
         <form method="GET" action="">"""
         self.__inputs = """
-        <input type="text" name = "code1" placeholder="Artist name"  />
-        <input type="text" name = "code2" placeholder="Song name"  />
-        <input type="submit" name="submit" />
+        <input id="artistInput" type="text" name = "code1" placeholder="Artist name"  />
+        <input id="songInput" type="text" name = "code2" placeholder="Song name"  />
+        <button class="btn">Search</button>
         """
         self.__form_close = """</form>"""
         self.form_header = """

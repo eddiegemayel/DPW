@@ -56,6 +56,7 @@ class LyricModel(object):
         self.__ldo.artist = xmldoc.getElementsByTagName("artist")[0].firstChild.nodeValue
         self.__ldo.song = xmldoc.getElementsByTagName("song")[0].firstChild.nodeValue
         self.__ldo.lyrics = xmldoc.getElementsByTagName("lyrics")[0].firstChild.nodeValue
+        self.__ldo.lyric_url = xmldoc.getElementsByTagName("url")[0].firstChild.nodeValue
 
     #dont want anyone overwriting data object im making it a property
     #with just the getter
@@ -107,7 +108,8 @@ class LyricView(object):
         <div>
             <h3>Song : {self.ldo.song}</h3>
                 <p><strong>By : </strong> {self.ldo.artist}</p>
-                <p><strong>Lyric Preview : </strong> {self.ldo.lyrics}</p>
+                <p><strong>Lyric preview : </strong> {self.ldo.lyrics}</p>
+                <p><strong>Link to full lyrics : </strong> <a href="{self.ldo.lyric_url}">{self.ldo.lyric_url}</a></p>
         </div>
 
         '''
