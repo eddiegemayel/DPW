@@ -59,7 +59,7 @@ class FormPage(Page):
         """
         self.page_content = """
         <div class="content">
-            <h3>Song info will appear here</h3>
+            <h3 class="infoHeader">The song info will appear here!</h3>
                 <!--<p><strong>By : </strong></p>
                 <p><strong>Lyric preview : </strong></p>
                 <p><strong>Link Will Be Here</strong></p>-->
