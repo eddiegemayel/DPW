@@ -115,9 +115,9 @@ class LyricView(object):
 
         self.content = '''
         <div class="content">
-            <h3>{self.ldo.song}</h3>
-                <p><strong>By </strong> {self.ldo.artist}</p>
-                <p><strong>Lyric preview : </strong> {self.ldo.lyrics}</p>
+            <h3 class="song">{self.ldo.song}</h3>
+                <p><strong>By - </strong><em>{self.ldo.artist}</em></p>
+                <p><strong>Lyric preview : </strong> <em>{self.ldo.lyrics}</em></p>
                 <p><strong><a href="{self.ldo.lyric_url}">Link to full lyrics</a></strong></p>
         </div>
 

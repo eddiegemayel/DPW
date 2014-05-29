@@ -26,7 +26,7 @@
       <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../final/final-project/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="65" selection-start="3199" selection-end="3199" vertical-scroll-proportion="0.0" vertical-offset="1200" max-vertical-offset="2025">
+            <state line="118" column="41" selection-start="3349" selection-end="3349" vertical-scroll-proportion="0.0" vertical-offset="1200" max-vertical-offset="2025">
               <folding>
                 <element signature="e#35#49#0" expanded="true" />
               </folding>
@@ -37,7 +37,7 @@
       <file leaf-file-name="page.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../../final/final-project/page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="30" selection-start="1595" selection-end="1595" vertical-scroll-proportion="0.47272727" vertical-offset="450" max-vertical-offset="1275">
+            <state line="56" column="31" selection-start="1596" selection-end="1596" vertical-scroll-proportion="0.6181818" vertical-offset="330" max-vertical-offset="1275">
               <folding />
             </state>
           </provider>
@@ -58,8 +58,8 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/../../../quizes/quiz3-inheritance/main.py" />
         <option value="$PROJECT_DIR$/../../../final/final-project/app.yaml" />
-        <option value="$PROJECT_DIR$/../../../final/final-project/page.py" />
         <option value="$PROJECT_DIR$/../../../final/final-project/main.py" />
+        <option value="$PROJECT_DIR$/../../../final/final-project/page.py" />
       </list>
     </option>
   </component>
@@ -384,7 +384,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../final/final-project/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="65" selection-start="3199" selection-end="3199" vertical-scroll-proportion="0.0" vertical-offset="1200" max-vertical-offset="2025">
+        <state line="118" column="41" selection-start="3349" selection-end="3349" vertical-scroll-proportion="0.0" vertical-offset="1200" max-vertical-offset="2025">
           <folding>
             <element signature="e#35#49#0" expanded="true" />
           </folding>
@@ -393,7 +393,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../final/final-project/page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="30" selection-start="1595" selection-end="1595" vertical-scroll-proportion="0.47272727" vertical-offset="450" max-vertical-offset="1275">
+        <state line="56" column="31" selection-start="1596" selection-end="1596" vertical-scroll-proportion="0.6181818" vertical-offset="330" max-vertical-offset="1275">
           <folding />
         </state>
       </provider>

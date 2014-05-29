@@ -54,12 +54,12 @@ class FormPage(Page):
         self.__form_close = """</form>"""
         self.form_header = """
             <div class="header">
-                <h1>Search For Lyrics</h1>
+                <h1>LyricFinder</h1>
             </div>
         """
         self.page_content = """
         <div class="content">
-            <h3>Song info will appear below</h3>
+            <h3>Song info will appear here</h3>
                 <!--<p><strong>By : </strong></p>
                 <p><strong>Lyric preview : </strong></p>
                 <p><strong>Link Will Be Here</strong></p>-->
