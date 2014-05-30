@@ -3,7 +3,6 @@
 #may 19 2014
 import webapp2
 from page import *
-#import json , for json file
 from xml.dom import minidom #library for working with xml in python
 import urllib2
 
@@ -58,7 +57,7 @@ class LyricModel(object):
         #parse it
         xmldoc = minidom.parse(data)
 
-        #find tags we want..and put it into instance of weather data object
+        #find tags we want..and put it into instance of the data object
         self.__ldo = LyricDataObject() #create instance of data object class
 
         self.__ldo.artist = xmldoc.getElementsByTagName("artist")[0].firstChild.nodeValue
@@ -104,7 +103,7 @@ class LyricDataObject(object):
 
 
 class LyricView(object):
-    #just showing weather info from the api
+    #just showing lyric info from the api
     def __init__(self):
 
         self.ldo = LyricDataObject()
