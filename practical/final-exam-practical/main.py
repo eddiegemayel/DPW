@@ -35,6 +35,24 @@ class GOTDataObject(object):
         self.head = ""
         self.image = ""
 
+class GOTView(object):
+    def __init__(self):
+        self.content = ""
+        self.GOTdo = GOTDataObject()
+
+    def populate(self):
+
+        self.content = """
+        <div class="content">
+            <h2><strong>{self.GOTdo.name}</strong></h2>
+                <p>Sigil : {self.GOTdo.sigil}</p>
+                <p>Motto : {self.GOTdo.motto}</p>
+                <p>Head : {self.GOTdo.head}</p>
+                <!--<p><img src="{self.GOTdo.image}"/></p>-->
+        </div>
+        """
+        self.content = self.content.format(**locals())
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
 ], debug=True)
