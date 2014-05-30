@@ -5,12 +5,11 @@ import webapp2
 from xml.dom import minidom
 import urllib2
 
-
-
-
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+        view = Page()
+
+        self.response.write(view.update())
 
 
 
@@ -52,6 +51,28 @@ class GOTView(object):
         </div>
         """
         self.content = self.content.format(**locals())
+
+
+class Page(object):
+    def __init__(self):
+        self.open = """
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game of Thrones</title>
+    </head>
+    <body>
+        """
+        self.page_content = """
+           Default content
+        """
+        self.close = """
+    </body>
+</html>
+                """
+
+    def update(self):
+        return self.open + self.page_content + self.close
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
