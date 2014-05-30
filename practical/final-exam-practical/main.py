@@ -26,7 +26,14 @@ class GOTModel(object):
 
         self.GOTdo = GOTDataObject()
 
-        
+
+class GOTDataObject(object):
+    def __init__(self):
+        self.name = ""
+        self.sigil = ""
+        self.motto = ""
+        self.head = ""
+        self.image = ""
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
