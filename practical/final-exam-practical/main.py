@@ -10,7 +10,7 @@ class MainHandler(webapp2.RequestHandler):
         #default static page view is created
         view = Page()
 
-        #Testing to see if i could get a name to show up. it worked.
+        #Testing just to see if i could get a name to show up. it worked.
         # req = urllib2.Request("http://rebeccacarroll.com/api/got/got.xml")
         # opener = urllib2.build_opener()
         # data = opener.open(req)
@@ -54,7 +54,7 @@ class GOTModel(object):
         #store url here along with counter that defaults to 0
         self.url = "http://rebeccacarroll.com/api/got/got.xml"
 
-        self.__newcounter = 0
+        self.__counter = 0
 
     def send_req(self):
         #parse the xml data recieved from api
@@ -63,30 +63,30 @@ class GOTModel(object):
         data = opener.open(req)
         xmldoc = minidom.parse(data)
 
-        print(self.__newcounter)
+        print(self.__counter)
 
 
         #instantiate data object
         self.__GOTdo = GOTDataObject()
 
         #collect info in the xml based on what the counter number is
-        self.__GOTdo.name = xmldoc.getElementsByTagName("name")[self.__newcounter].firstChild.nodeValue
-        self.__GOTdo.sigil = xmldoc.getElementsByTagName("sigil")[self.__newcounter].firstChild.nodeValue
-        self.__GOTdo.motto = xmldoc.getElementsByTagName("motto")[self.__newcounter].firstChild.nodeValue
-        self.__GOTdo.head = xmldoc.getElementsByTagName("head")[self.__newcounter].firstChild.nodeValue
-        self.__GOTdo.image = xmldoc.getElementsByTagName("image")[self.__newcounter].firstChild.nodeValue
+        self.__GOTdo.name = xmldoc.getElementsByTagName("name")[self.__counter].firstChild.nodeValue
+        self.__GOTdo.sigil = xmldoc.getElementsByTagName("sigil")[self.__counter].firstChild.nodeValue
+        self.__GOTdo.motto = xmldoc.getElementsByTagName("motto")[self.__counter].firstChild.nodeValue
+        self.__GOTdo.head = xmldoc.getElementsByTagName("head")[self.__counter].firstChild.nodeValue
+        self.__GOTdo.image = xmldoc.getElementsByTagName("image")[self.__counter].firstChild.nodeValue
 
     @property
     def GOTdo(self):
         return self.__GOTdo
 
     @property
-    def newcounter(self):
-        return self.__newcounter
+    def counter(self):
+        return self.__counter
 
-    @newcounter.setter
-    def newcounter(self, n):
-        self.__newcounter = n
+    @counter.setter
+    def counter(self, n):
+        self.__counter = n
 
 
 
@@ -155,11 +155,18 @@ class Page(object):
     </body>
 </html>
 """
+    # @property
+    # def counter(self):
+    #     return self.__counter
+    #
+    # @counter.setter
+    # def counter(self, n):
+    #     self.__counter = n
 
     def update(self):
         #format locals and return page
         self.open.format(**locals())
-
+        print(self.counter)
         return self.open + self.page_content + self.close
 
 
