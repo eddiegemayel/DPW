@@ -10,13 +10,12 @@ class MainHandler(webapp2.RequestHandler):
         #default static page view is created
         view = Page()
 
-        #Testing just to see if i could get a name to show up. it worked.
+        #Testing just to see if i could get some values to show up. it worked.
+
         # req = urllib2.Request("http://rebeccacarroll.com/api/got/got.xml")
         # opener = urllib2.build_opener()
         # data = opener.open(req)
         # xmldoc = minidom.parse(data)
-
-
         # src = xmldoc.getElementsByTagName("image")[counter].firstChild.nodeValue
         # self.response.write("<img src="+src+"/>")
 
