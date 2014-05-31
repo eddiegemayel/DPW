@@ -11,7 +11,6 @@ class MainHandler(webapp2.RequestHandler):
         view = Page()
 
         #Testing just to see if i could get some values to show up. it worked.
-
         # req = urllib2.Request("http://rebeccacarroll.com/api/got/got.xml")
         # opener = urllib2.build_opener()
         # data = opener.open(req)
@@ -20,13 +19,18 @@ class MainHandler(webapp2.RequestHandler):
         # self.response.write("<img src="+src+"/>")
 
 
+
         #a link has been clicked
         if self.request.GET:
             #model is created
             got_model = GOTModel()
 
-            #trying to set counter to the value of counter clicked...its not listening
-            got_model.newcounter = view.counter
+            #print(self.request.GET["counter"])
+
+            #set the model counter to the counter in the url
+            #and parse it into an integer
+            got_model.counter = int(self.request.GET["counter"])
+
 
             #send the request with which link user picked
             got_model.send_req()
@@ -62,7 +66,7 @@ class GOTModel(object):
         data = opener.open(req)
         xmldoc = minidom.parse(data)
 
-        print(self.__counter)
+       # print(self.__counter)
 
 
         #instantiate data object
@@ -110,7 +114,7 @@ class GOTView(object):
         #this populates with local variables that will be formatted
         self.content = """
         <div class="content">
-            <h2><strong>{self.GOTdo.name}</strong></h2>
+            <h2><strong>The {self.GOTdo.name} House</strong></h2>
                 <p>Sigil : {self.GOTdo.sigil}</p>
                 <p>Motto : {self.GOTdo.motto}</p>
                 <p>Head : {self.GOTdo.head}</p>
@@ -126,7 +130,7 @@ class Page(object):
         #create data object
         self.GOTdo = GOTDataObject()
 
-        #counter starts at 0...but for whatever reason refuses to change
+        #counter starts at 0
         self.counter = 0
 
         #opening of html document
@@ -154,13 +158,7 @@ class Page(object):
     </body>
 </html>
 """
-    # @property
-    # def counter(self):
-    #     return self.__counter
-    #
-    # @counter.setter
-    # def counter(self, n):
-    #     self.__counter = n
+
 
     def update(self):
         #format locals and return page
