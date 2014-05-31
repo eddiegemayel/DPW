@@ -54,7 +54,7 @@ class GOTModel(object):
         #store url here along with counter that defaults to 0
         self.url = "http://rebeccacarroll.com/api/got/got.xml"
 
-        self.newcounter = 0
+        self.__newcounter = 0
 
     def send_req(self):
         #parse the xml data recieved from api
@@ -63,28 +63,31 @@ class GOTModel(object):
         data = opener.open(req)
         xmldoc = minidom.parse(data)
 
+        print(self.__newcounter)
+
+
         #instantiate data object
         self.__GOTdo = GOTDataObject()
 
         #collect info in the xml based on what the counter number is
-        self.__GOTdo.name = xmldoc.getElementsByTagName("name")[self.newcounter].firstChild.nodeValue
-        self.__GOTdo.sigil = xmldoc.getElementsByTagName("sigil")[self.newcounter].firstChild.nodeValue
-        self.__GOTdo.motto = xmldoc.getElementsByTagName("motto")[self.newcounter].firstChild.nodeValue
-        self.__GOTdo.head = xmldoc.getElementsByTagName("head")[self.newcounter].firstChild.nodeValue
-        self.__GOTdo.image = xmldoc.getElementsByTagName("image")[self.newcounter].firstChild.nodeValue
+        self.__GOTdo.name = xmldoc.getElementsByTagName("name")[self.__newcounter].firstChild.nodeValue
+        self.__GOTdo.sigil = xmldoc.getElementsByTagName("sigil")[self.__newcounter].firstChild.nodeValue
+        self.__GOTdo.motto = xmldoc.getElementsByTagName("motto")[self.__newcounter].firstChild.nodeValue
+        self.__GOTdo.head = xmldoc.getElementsByTagName("head")[self.__newcounter].firstChild.nodeValue
+        self.__GOTdo.image = xmldoc.getElementsByTagName("image")[self.__newcounter].firstChild.nodeValue
 
     @property
     def GOTdo(self):
         return self.__GOTdo
 
-    # @property
-    # def counter(self):
-    #     return self.__counter
-    #
-    # @set
-    # def counter(self, n):
-    #     n = self.counter
-    #     return n
+    @property
+    def newcounter(self):
+        return self.__newcounter
+
+    @newcounter.setter
+    def newcounter(self, n):
+        self.__newcounter = n
+
 
 
 
