@@ -15,10 +15,6 @@ class MainHandler(webapp2.RequestHandler):
         # data = opener.open(req)
         # xmldoc = minidom.parse(data)
 
-        counter = 0
-        counter = view.counter
-
-
 
         # src = xmldoc.getElementsByTagName("image")[counter].firstChild.nodeValue
         # self.response.write("<img src="+src+"/>")
@@ -28,7 +24,7 @@ class MainHandler(webapp2.RequestHandler):
         if self.request.GET:
             got_model = GOTModel()
 
-            got_model.counter = counter
+            got_model.counter = view.counter
 
             got_model.send_req()
 
@@ -64,6 +60,7 @@ class GOTModel(object):
         self.__GOTdo.sigil = xmldoc.getElementsByTagName("sigil")[self.counter].firstChild.nodeValue
         self.__GOTdo.motto = xmldoc.getElementsByTagName("motto")[self.counter].firstChild.nodeValue
         self.__GOTdo.head = xmldoc.getElementsByTagName("head")[self.counter].firstChild.nodeValue
+        self.__GOTdo.image = xmldoc.getElementsByTagName("image")[self.counter].firstChild.nodeValue
 
     @property
     def GOTdo(self):
@@ -102,7 +99,7 @@ class GOTView(object):
                 <p>Sigil : {self.GOTdo.sigil}</p>
                 <p>Motto : {self.GOTdo.motto}</p>
                 <p>Head : {self.GOTdo.head}</p>
-                <!--<p><img src="{self.GOTdo.image}"/></p>-->
+                <img src="{self.GOTdo.image}"/>
         </div>
         """
         self.content = self.content.format(**locals())
@@ -130,7 +127,7 @@ class Page(object):
         <a href="?counter=5">Tully</a>
         """
         self.page_content = """
-           Default content
+
         """
         self.close = """
     </body>
