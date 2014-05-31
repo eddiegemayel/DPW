@@ -8,6 +8,30 @@ import urllib2
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         view = Page()
+        #Testing to see if i could get a name to show up. it worked.
+        # req = urllib2.Request("http://rebeccacarroll.com/api/got/got.xml")
+        # opener = urllib2.build_opener()
+        # data = opener.open(req)
+        # xmldoc = minidom.parse(data)
+        #
+        #
+        #
+        #
+        # print(xmldoc.getElementsByTagName("name")[0].firstChild.nodeValue)
+
+        if self.request.GET:
+            got_model = GOTModel()
+
+            got_model.send_req()
+
+            got_view = GOTView()
+
+            got_view.GOTdo = got_model.GOTdo
+
+            got_view.populate()
+
+            view.page_content = got_view.content
+
 
         self.response.write(view.update())
 
@@ -24,6 +48,8 @@ class GOTModel(object):
         xmldoc = minidom.parse(data)
 
         self.GOTdo = GOTDataObject()
+
+        self.GOTdo.name = xmldoc.getElementsByTagName("name")[0].firstChild.nodeVaule
 
 
 class GOTDataObject(object):
@@ -60,8 +86,10 @@ class Page(object):
 <html>
     <head>
         <title>Game of Thrones</title>
+        <link rel="stylesheet" href="css/main.css"/>
     </head>
     <body>
+        <a href="">Click here for Lannister</a>
         """
         self.page_content = """
            Default content
@@ -73,6 +101,8 @@ class Page(object):
 
     def update(self):
         return self.open + self.page_content + self.close
+
+
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
