@@ -10,18 +10,25 @@ class MainHandler(webapp2.RequestHandler):
         view = Page()
 
         #Testing to see if i could get a name to show up. it worked.
-        req = urllib2.Request("http://rebeccacarroll.com/api/got/got.xml")
-        opener = urllib2.build_opener()
-        data = opener.open(req)
-        xmldoc = minidom.parse(data)
+        # req = urllib2.Request("http://rebeccacarroll.com/api/got/got.xml")
+        # opener = urllib2.build_opener()
+        # data = opener.open(req)
+        # xmldoc = minidom.parse(data)
+
+        counter = 0
+        counter = view.counter
 
 
 
+        # src = xmldoc.getElementsByTagName("image")[counter].firstChild.nodeValue
+        # self.response.write("<img src="+src+"/>")
 
-        print(xmldoc.getElementsByTagName("sigil")[5].firstChild.nodeValue)
+
 
         if self.request.GET:
             got_model = GOTModel()
+
+            got_model.counter = counter
 
             got_model.send_req()
 
@@ -41,6 +48,9 @@ class MainHandler(webapp2.RequestHandler):
 class GOTModel(object):
     def __init__(self):
         self.url = "http://rebeccacarroll.com/api/got/got.xml"
+        self.view = Page()
+
+        self.counter = 0
 
     def send_req(self):
         req = urllib2.Request(self.url)
@@ -50,12 +60,23 @@ class GOTModel(object):
 
         self.__GOTdo = GOTDataObject()
 
-        self.__GOTdo.name = xmldoc.getElementsByTagName("name")[0].firstChild.nodeVaule
-        self.__GOTdo.sigil = xmldoc.getElementsByTagName("sigil")[0].firstChild.nodeVaule
+        self.__GOTdo.name = xmldoc.getElementsByTagName("name")[self.counter].firstChild.nodeValue
+        self.__GOTdo.sigil = xmldoc.getElementsByTagName("sigil")[self.counter].firstChild.nodeValue
+        self.__GOTdo.motto = xmldoc.getElementsByTagName("motto")[self.counter].firstChild.nodeValue
+        self.__GOTdo.head = xmldoc.getElementsByTagName("head")[self.counter].firstChild.nodeValue
 
     @property
     def GOTdo(self):
         return self.__GOTdo
+
+    # @property
+    # def counter(self):
+    #     return self.__counter
+    #
+    # @set
+    # def counter(self, n):
+    #     n = self.counter
+    #     return n
 
 
 
@@ -90,6 +111,9 @@ class GOTView(object):
 class Page(object):
     def __init__(self):
         self.GOTdo = GOTDataObject()
+
+        self.counter = 0
+
         self.open = """
 <!DOCTYPE html>
 <html>
@@ -98,12 +122,12 @@ class Page(object):
         <link rel="stylesheet" href="css/main.css"/>
     </head>
     <body>
-        <a href="0">Lannister</a>
-        <a href="1">Stark</a>
-        <a href="2">Baratheon</a>
-        <a href="3">Greyjoy</a>
-        <a href="4">Targaryen</a>
-        <a href="5">Tully</a>
+        <a href="?counter=0">Lannister</a>
+        <a href="?counter=1">Stark</a>
+        <a href="?counter=2">Baratheon</a>
+        <a href="?counter=3">Greyjoy</a>
+        <a href="?counter=4">Targaryen</a>
+        <a href="?counter=5">Tully</a>
         """
         self.page_content = """
            Default content
@@ -111,7 +135,7 @@ class Page(object):
         self.close = """
     </body>
 </html>
-                """
+"""
 
     def update(self):
         self.open.format(**locals())
