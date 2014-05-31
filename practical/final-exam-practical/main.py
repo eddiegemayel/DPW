@@ -8,16 +8,17 @@ import urllib2
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         view = Page()
+
         #Testing to see if i could get a name to show up. it worked.
-        # req = urllib2.Request("http://rebeccacarroll.com/api/got/got.xml")
-        # opener = urllib2.build_opener()
-        # data = opener.open(req)
-        # xmldoc = minidom.parse(data)
-        #
-        #
-        #
-        #
-        # print(xmldoc.getElementsByTagName("name")[0].firstChild.nodeValue)
+        req = urllib2.Request("http://rebeccacarroll.com/api/got/got.xml")
+        opener = urllib2.build_opener()
+        data = opener.open(req)
+        xmldoc = minidom.parse(data)
+
+
+
+
+        print(xmldoc.getElementsByTagName("sigil")[5].firstChild.nodeValue)
 
         if self.request.GET:
             got_model = GOTModel()
@@ -47,13 +48,20 @@ class GOTModel(object):
         data = opener.open(req)
         xmldoc = minidom.parse(data)
 
-        self.GOTdo = GOTDataObject()
+        self.__GOTdo = GOTDataObject()
 
-        self.GOTdo.name = xmldoc.getElementsByTagName("name")[0].firstChild.nodeVaule
+        self.__GOTdo.name = xmldoc.getElementsByTagName("name")[0].firstChild.nodeVaule
+        self.__GOTdo.sigil = xmldoc.getElementsByTagName("sigil")[0].firstChild.nodeVaule
+
+    @property
+    def GOTdo(self):
+        return self.__GOTdo
+
 
 
 class GOTDataObject(object):
     def __init__(self):
+        self.house = []
         self.name = ""
         self.sigil = ""
         self.motto = ""
@@ -81,6 +89,7 @@ class GOTView(object):
 
 class Page(object):
     def __init__(self):
+        self.GOTdo = GOTDataObject()
         self.open = """
 <!DOCTYPE html>
 <html>
@@ -89,7 +98,12 @@ class Page(object):
         <link rel="stylesheet" href="css/main.css"/>
     </head>
     <body>
-        <a href="">Click here for Lannister</a>
+        <a href="0">Lannister</a>
+        <a href="1">Stark</a>
+        <a href="2">Baratheon</a>
+        <a href="3">Greyjoy</a>
+        <a href="4">Targaryen</a>
+        <a href="5">Tully</a>
         """
         self.page_content = """
            Default content
@@ -100,6 +114,7 @@ class Page(object):
                 """
 
     def update(self):
+        self.open.format(**locals())
         return self.open + self.page_content + self.close
 
 
