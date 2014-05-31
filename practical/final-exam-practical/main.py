@@ -7,6 +7,7 @@ import urllib2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
+        #default static page view is created
         view = Page()
 
         #Testing to see if i could get a name to show up. it worked.
@@ -20,47 +21,57 @@ class MainHandler(webapp2.RequestHandler):
         # self.response.write("<img src="+src+"/>")
 
 
-
+        #a link has been clicked
         if self.request.GET:
+            #model is created
             got_model = GOTModel()
 
-            got_model.counter = view.counter
+            #trying to set counter to the value of counter clicked...its not listening
+            got_model.newcounter = view.counter
 
+            #send the request with which link user picked
             got_model.send_req()
 
+            #create the dynamic view
             got_view = GOTView()
 
+            #tell it which data object we are using
             got_view.GOTdo = got_model.GOTdo
 
+            #populate the page with new info
             got_view.populate()
 
+            #set the populated info to the page content
             view.page_content = got_view.content
 
-
+        #write out the page content
         self.response.write(view.update())
 
 
 
 class GOTModel(object):
     def __init__(self):
+        #store url here along with counter that defaults to 0
         self.url = "http://rebeccacarroll.com/api/got/got.xml"
-        self.view = Page()
 
-        self.counter = 0
+        self.newcounter = 0
 
     def send_req(self):
+        #parse the xml data recieved from api
         req = urllib2.Request(self.url)
         opener = urllib2.build_opener()
         data = opener.open(req)
         xmldoc = minidom.parse(data)
 
+        #instantiate data object
         self.__GOTdo = GOTDataObject()
 
-        self.__GOTdo.name = xmldoc.getElementsByTagName("name")[self.counter].firstChild.nodeValue
-        self.__GOTdo.sigil = xmldoc.getElementsByTagName("sigil")[self.counter].firstChild.nodeValue
-        self.__GOTdo.motto = xmldoc.getElementsByTagName("motto")[self.counter].firstChild.nodeValue
-        self.__GOTdo.head = xmldoc.getElementsByTagName("head")[self.counter].firstChild.nodeValue
-        self.__GOTdo.image = xmldoc.getElementsByTagName("image")[self.counter].firstChild.nodeValue
+        #collect info in the xml based on what the counter number is
+        self.__GOTdo.name = xmldoc.getElementsByTagName("name")[self.newcounter].firstChild.nodeValue
+        self.__GOTdo.sigil = xmldoc.getElementsByTagName("sigil")[self.newcounter].firstChild.nodeValue
+        self.__GOTdo.motto = xmldoc.getElementsByTagName("motto")[self.newcounter].firstChild.nodeValue
+        self.__GOTdo.head = xmldoc.getElementsByTagName("head")[self.newcounter].firstChild.nodeValue
+        self.__GOTdo.image = xmldoc.getElementsByTagName("image")[self.newcounter].firstChild.nodeValue
 
     @property
     def GOTdo(self):
@@ -79,7 +90,7 @@ class GOTModel(object):
 
 class GOTDataObject(object):
     def __init__(self):
-        self.house = []
+        #this is where the empty strings are held to be populated later
         self.name = ""
         self.sigil = ""
         self.motto = ""
@@ -88,11 +99,13 @@ class GOTDataObject(object):
 
 class GOTView(object):
     def __init__(self):
+        #the content is empty at first until something is clicked
         self.content = ""
+        #create a data object
         self.GOTdo = GOTDataObject()
 
     def populate(self):
-
+        #this populates with local variables that will be formatted
         self.content = """
         <div class="content">
             <h2><strong>{self.GOTdo.name}</strong></h2>
@@ -102,15 +115,19 @@ class GOTView(object):
                 <img src="{self.GOTdo.image}"/>
         </div>
         """
+        #format the locals
         self.content = self.content.format(**locals())
 
 
 class Page(object):
     def __init__(self):
+        #create data object
         self.GOTdo = GOTDataObject()
 
+        #counter starts at 0...but for whatever reason refuses to change
         self.counter = 0
 
+        #opening of html document
         self.open = """
 <!DOCTYPE html>
 <html>
@@ -126,16 +143,20 @@ class Page(object):
         <a href="?counter=4">Targaryen</a>
         <a href="?counter=5">Tully</a>
         """
+        #page content to be populated by model
         self.page_content = """
 
         """
+        #closing tags
         self.close = """
     </body>
 </html>
 """
 
     def update(self):
+        #format locals and return page
         self.open.format(**locals())
+
         return self.open + self.page_content + self.close
 
 
